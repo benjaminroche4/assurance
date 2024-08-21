@@ -1,0 +1,65 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello BlogController!{% endblock %}
+
+{% block body %}
+    <section class="py-10 sm:py-20 lg:px-8">
+        <div class="mx-auto max-w-7xl text-left lg:px-8">
+            <div class="max-w-4xl">
+                <h1 class="text-3xl font-semibold text-gray-900 tracking-tight sm:text-5xl">{{ blogPost.title }}</h1>
+                <div class="mt-2 sm:mt-4 flex items-center text-sm sm:text-base gap-x-2 text-gray-600">
+                    <time datetime="{{ blogPost.createdAt|date('d F Y') }}">{{ blogPost.createdAt|date('d F Y')|format_date(locale='fr') }}</time> •
+                    <span>{{ blogPost.category.name|capitalize }}</span>
+                </div>
+            </div>
+        </div>
+        <div class="mt-10 mx-auto max-w-7xl relative isolate overflow-hidden bg-gray-900 px-6 py-40 sm:py-60 lg:px-8 rounded-3xl">
+            <img src="{{ asset('media/blog/image/'~blogPost.imageUrl) }}" alt="Photo illustrant l'article : {{ blogPost.title }}" class="absolute inset-0 -z-10 h-full w-full object-cover">
+        </div>
+        <div class="mx-auto max-w-7xl grid grid-cols-3 lg:px-8 md:gap-x-8 mt-14">
+            <div class="col-span-3 md:col-span-2">
+                {{ blogPost.content | raw }}
+            </div>
+            <div class="mt-10 md:mt-0 lg:mx-6 col-span-3 md:col-span-1">
+                <div class="p-6 rounded-2xl border border-gray-200 sticky top-28 shrink-0">
+                    <div class="flex justify-center py-3">
+                        <p class="font-semibold">Vous souhaitez l'avis d'un expert pour votre projet ?</p>
+                    </div>
+                    <div class="text-center mt-4">
+                        <a href="#" class="w-auto flex gap-x-1.5 text-sm font-semibold leading-6 text-white bg-secondary px-4 py-3 rounded-xl items-center justify-center transition duration-100 hover:bg-secondary-light">
+                            <img src="{{ asset('media/site/2.jpg') }}" alt="" class="w-7 h-7 rounded-full">
+                            <span class="text-sm">On vous rappelles</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="mx-auto max-w-7xl lg:px-8 py-12 sm:py-24">
+        <div class="max-w-2xl">
+            <h2 class="text-3xl font-semibold text-gray-900 tracking-tight sm:text-5xl">Articles recommandés</h2>
+        </div>
+        <div class="mx-auto mt-10 sm:mt-16 grid max-w-2xl grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-12 md:mx-0 md:max-w-none lg:grid-cols-3">
+            {% for post in recommendedPosts %}
+                <article class="flex flex-col items-start justify-between">
+                    <a href="{{ path('app_blog_post', {'slug': post.slug }) }}">
+                        <div class="relative w-full">
+                            <img src="{{ asset('media/blog/image/'~post.imageUrl) }}" alt="Photo illustrant l'article : {{ post.title }}" class="aspect-[16/9] w-full rounded-2xl bg-gray-100 object-cover sm:aspect-[2/1] lg:aspect-[3/2]">
+                        </div>
+                        <div class="max-w-xl">
+                            <div class="mt-8 flex items-center gap-x-2 text-sm text-gray-600">
+                                <time datetime="{{ post.createdAt|date('d F Y') }}">{{ post.createdAt|date('d F Y')|format_date(locale='fr') }}</time> •
+                                <span>{{ post.category.name|capitalize }}</span>
+                            </div>
+                            <div class="group relative">
+                                <h2 class="mt-3 text-2xl font-semibold tracking-tight leading-6 text-gray-900 group-hover:text-gray-600 transition duration-100">
+                                    {{ post.title }}
+                                </h2>
+                            </div>
+                        </div>
+                    </a>
+                </article>
+            {% endfor %}
+        </div>
+    </section>
+{% endblock %}

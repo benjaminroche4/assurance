@@ -12,11 +12,15 @@ module.exports = {
           light: '#51886c',
           DEFAULT: '#3BC271',
         },
+        'secondary': {
+          DEFAULT: '#124660',
+        },
       }
     },
   },
   plugins: [
     require('@tailwindcss/forms'),
+    require('@tailwindcss/aspect-ratio'),
   ],
 }
 

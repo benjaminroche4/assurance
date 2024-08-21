@@ -1,0 +1,17 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Erreur{% endblock %}
+{% block robots %}noindex, nofollow{% endblock %}
+
+{% block body %}
+    <section class="grid place-items-center max-w-7xl mx-auto">
+        <div class="text-center py-32 sm:py-40 lg:px-8 w-full rounded-3xl max-w-lg">
+            <p class="text-5xl sm:text-6xl font-semibold text-primary">500</p>
+            <h1 class="mt-4 text-3xl font-bold tracking-tight text-primary sm:text-4xl">Erreur générale</h1>
+            <p class="mt-6 text-base leading-7 text-gray-900">Désolé, nous travaillons actuellement pour résoudre cette erreur.</p>
+            <div class="mt-10 flex items-center justify-center gap-x-6">
+                <a href="{{ path('app_home')}}" class="w-auto text-sm font-semibold leading-6 text-white bg-primary px-4 py-3 rounded-full flex items-center justify-center transition duration-100 hover:bg-primary-light">Revenir à l'accueil →</a>
+            </div>
+        </div>
+    </section>
+{% endblock %}

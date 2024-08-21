@@ -1,6 +1,6 @@
 <footer aria-labelledby="footer-heading" class="sm:px-4 mt-10">
     <h2 id="footer-heading" class="sr-only">Footer</h2>
-    <div class="bg-[#124660] rounded-t-3xl mx-auto max-w-7xl px-6 pb-8 pt-16 sm:pt-24 lg:px-8 lg:pt-28">
+    <div class="bg-secondary rounded-t-3xl mx-auto max-w-7xl px-6 pb-8 pt-16 sm:pt-24 lg:px-8 lg:pt-28">
         <div class="xl:grid xl:grid-cols-3 xl:gap-8">
             <div class="space-y-5 divide-y divide-white/10">
                 <a href="{{ path('app_home') }}">
@@ -31,19 +31,19 @@
             <div class="mt-10 sm:mt-16 grid grid-cols-2 gap-8 xl:col-span-2 xl:mt-0">
                 <div class="md:grid md:grid-cols-2 md:gap-8">
                     <div>
-                        <h3 class="text-sm font-semibold leading-6 text-white">Solutions</h3>
+                        <h3 class="text-sm font-semibold leading-6 text-white">Assurances</h3>
                         <ul role="list" class="mt-6 space-y-4">
                             <li>
-                                <a href="#" class="text-sm leading-6 text-gray-300 hover:text-white">Marketing</a>
+                                <a href="{{ path('app_blog') }}" class="text-sm leading-6 text-gray-300 hover:text-white transition duration-100">Blog</a>
                             </li>
                             <li>
-                                <a href="#" class="text-sm leading-6 text-gray-300 hover:text-white">Analytics</a>
+                                <a href="#" class="text-sm leading-6 text-gray-300 hover:text-white transition duration-100">Analytics</a>
                             </li>
                             <li>
-                                <a href="#" class="text-sm leading-6 text-gray-300 hover:text-white">Commerce</a>
+                                <a href="#" class="text-sm leading-6 text-gray-300 hover:text-white transition duration-100">Commerce</a>
                             </li>
                             <li>
-                                <a href="#" class="text-sm leading-6 text-gray-300 hover:text-white">Insights</a>
+                                <a href="#" class="text-sm leading-6 text-gray-300 hover:text-white transition duration-100">Insights</a>
                             </li>
                         </ul>
                     </div>
@@ -51,52 +51,40 @@
                         <h3 class="text-sm font-semibold leading-6 text-white">Support</h3>
                         <ul role="list" class="mt-6 space-y-4">
                             <li>
-                                <a href="#" class="text-sm leading-6 text-gray-300 hover:text-white">Pricing</a>
+                                <a href="#" class="text-sm leading-6 text-gray-300 hover:text-white transition duration-100">À propos</a>
                             </li>
                             <li>
-                                <a href="#" class="text-sm leading-6 text-gray-300 hover:text-white">Documentation</a>
+                                <a href="{{ path('app_contact') }}" class="text-sm leading-6 text-gray-300 hover:text-white transition duration-100">Contactez-nous</a>
                             </li>
                             <li>
-                                <a href="#" class="text-sm leading-6 text-gray-300 hover:text-white">Guides</a>
+                                <a href="#" class="text-sm leading-6 text-gray-300 hover:text-white transition duration-100">FAQ</a>
                             </li>
                             <li>
-                                <a href="#" class="text-sm leading-6 text-gray-300 hover:text-white">API Status</a>
+                                <a href="{{ path('app_blog') }}" class="text-sm leading-6 text-gray-300 hover:text-white transition duration-100">Blog</a>
                             </li>
                         </ul>
                     </div>
                 </div>
                 <div class="md:grid md:grid-cols-2 md:gap-8">
                     <div>
-                        <h3 class="text-sm font-semibold leading-6 text-white">Company</h3>
+                        <h3 class="text-sm font-semibold leading-6 text-white">Client</h3>
                         <ul role="list" class="mt-6 space-y-4">
                             <li>
-                                <a href="#" class="text-sm leading-6 text-gray-300 hover:text-white">About</a>
+                                <a href="#" class="text-sm leading-6 text-gray-300 hover:text-white transition duration-100">Connexion</a>
                             </li>
                             <li>
-                                <a href="#" class="text-sm leading-6 text-gray-300 hover:text-white">Blog</a>
-                            </li>
-                            <li>
-                                <a href="#" class="text-sm leading-6 text-gray-300 hover:text-white">Jobs</a>
-                            </li>
-                            <li>
-                                <a href="#" class="text-sm leading-6 text-gray-300 hover:text-white">Press</a>
-                            </li>
-                            <li>
-                                <a href="#" class="text-sm leading-6 text-gray-300 hover:text-white">Partners</a>
+                                <a href="#" class="text-sm leading-6 text-gray-300 hover:text-white transition duration-100">Newsletter</a>
                             </li>
                         </ul>
                     </div>
                     <div class="mt-10 md:mt-0">
-                        <h3 class="text-sm font-semibold leading-6 text-white">Legal</h3>
+                        <h3 class="text-sm font-semibold leading-6 text-white">Légal</h3>
                         <ul role="list" class="mt-6 space-y-4">
                             <li>
-                                <a href="#" class="text-sm leading-6 text-gray-300 hover:text-white">Claim</a>
+                                <a href="{{ path('app_legal_notice') }}" class="text-sm leading-6 text-gray-300 hover:text-white transition duration-100">Mentions légales</a>
                             </li>
                             <li>
-                                <a href="#" class="text-sm leading-6 text-gray-300 hover:text-white">Privacy</a>
-                            </li>
-                            <li>
-                                <a href="#" class="text-sm leading-6 text-gray-300 hover:text-white">Terms</a>
+                                <a href="{{ path('app_personal_data') }}" class="text-sm leading-6 text-gray-300 hover:text-white transition duration-100">Données personnelles</a>
                             </li>
                         </ul>
                     </div>
