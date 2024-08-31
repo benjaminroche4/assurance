@@ -18,7 +18,14 @@
         <header {{ react_component('Header') }}></header>
         <main class="px-5 mt-20 sm:mt-24">
             {% block body %}{% endblock %}
+
+            {% set current_route = app.request.attributes.get('_route') %}
+            {% set exception = app.request.attributes.get('exception') %}
+            {% set status_code = exception ? exception.statusCode : 200 %}
+            {% if current_route not in excluded_routes and status_code not in [404, 403, 500] %}
+                {% include('components/block_CTA.html.twig') %}
+            {% endif %}
         </main>
-    {% include('components/footer.html.twig') %}
+        {% include('components/footer.html.twig') %}
     </body>
 </html>

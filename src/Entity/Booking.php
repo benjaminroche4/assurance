@@ -17,12 +17,6 @@ class Booking
     #[ORM\Column(length: 20)]
     private ?string $phoneNumber = null;
 
-    #[ORM\Column(type: Types::DATE_MUTABLE)]
-    private ?\DateTimeInterface $bookingDate = null;
-
-    #[ORM\Column(type: Types::TIME_MUTABLE)]
-    private ?\DateTimeInterface $bookingTime = null;
-
     #[ORM\Column]
     private ?\DateTimeImmutable $createdAt = null;
 
@@ -39,30 +33,6 @@ class Booking
     public function setPhoneNumber(string $phoneNumber): static
     {
         $this->phoneNumber = $phoneNumber;
-
-        return $this;
-    }
-
-    public function getBookingDate(): ?\DateTimeInterface
-    {
-        return $this->bookingDate;
-    }
-
-    public function setBookingDate(\DateTimeInterface $bookingDate): static
-    {
-        $this->bookingDate = $bookingDate;
-
-        return $this;
-    }
-
-    public function getBookingTime(): ?\DateTimeInterface
-    {
-        return $this->bookingTime;
-    }
-
-    public function setBookingTime(\DateTimeInterface $bookingTime): static
-    {
-        $this->bookingTime = $bookingTime;
 
         return $this;
     }

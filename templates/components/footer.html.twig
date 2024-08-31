@@ -1,10 +1,10 @@
-<footer aria-labelledby="footer-heading" class="sm:px-4 mt-8">
+<footer aria-labelledby="footer-heading" class="sm:px-4 mt-5">
     <h2 id="footer-heading" class="sr-only">Footer</h2>
     <div class="bg-secondary rounded-t-3xl mx-auto max-w-7xl px-6 pb-8 pt-16 sm:pt-24 lg:px-8 lg:pt-28">
         <div class="xl:grid xl:grid-cols-3 xl:gap-8">
             <div class="space-y-5 divide-y divide-white/10">
                 <a href="{{ path('app_home') }}">
-                    <img class="h-8" src="{{ asset('media/logo/logo_blanc.png') }}" alt="Logo de Assurance Genevoise à Genève">
+                    <img class="h-8" src="{{ asset('media/logo/logo_white.png') }}" alt="Logo de Assurance Genevoise à Genève">
                 </a>
                 <div class="flex items-center gap-x-4 py-4 divide-x divide-white/10">
                     <div class="flex items-center gap-x-4">
@@ -31,19 +31,16 @@
             <div class="mt-10 sm:mt-16 grid grid-cols-2 gap-8 xl:col-span-2 xl:mt-0">
                 <div class="md:grid md:grid-cols-2 md:gap-8">
                     <div>
-                        <h3 class="text-sm font-semibold leading-6 text-white">Assurances</h3>
+                        <h3 class="text-sm font-semibold leading-6 text-white">Services</h3>
                         <ul role="list" class="mt-6 space-y-4">
                             <li>
-                                <a href="{{ path('app_insurance_transport_fine_art') }}" class="text-sm leading-6 text-gray-300 hover:text-white transition duration-100">Transport et fine art</a>
+                                <a href="{{ path('app_insurance_transport_fine_art') }}" class="text-sm leading-6 text-gray-300 hover:text-white transition duration-100">Assurances</a>
                             </li>
                             <li>
-                                <a href="#" class="text-sm leading-6 text-gray-300 hover:text-white transition duration-100">Analytics</a>
+                                <a href="#" class="text-sm leading-6 text-gray-300 hover:text-white transition duration-100">Prévoyances</a>
                             </li>
                             <li>
-                                <a href="#" class="text-sm leading-6 text-gray-300 hover:text-white transition duration-100">Commerce</a>
-                            </li>
-                            <li>
-                                <a href="#" class="text-sm leading-6 text-gray-300 hover:text-white transition duration-100">Insights</a>
+                                <a href="#" class="text-sm leading-6 text-gray-300 hover:text-white transition duration-100">Risques</a>
                             </li>
                         </ul>
                     </div>
@@ -51,23 +48,20 @@
                         <h3 class="text-sm font-semibold leading-6 text-white">Support</h3>
                         <ul role="list" class="mt-6 space-y-4">
                             <li>
-                                <a href="#" class="text-sm leading-6 text-gray-300 hover:text-white transition duration-100">À propos</a>
+                                <a href="#" class="text-sm leading-6 text-gray-300 hover:text-white transition duration-100">Sinistre et assistance</a>
                             </li>
                             <li>
-                                <a href="{{ path('app_contact') }}" class="text-sm leading-6 text-gray-300 hover:text-white transition duration-100">Contactez-nous</a>
+                                <a href="{{ path('app_blog') }}" class="text-sm leading-6 text-gray-300 hover:text-white transition duration-100">Qui sommes-nous ?</a>
                             </li>
                             <li>
                                 <a href="#" class="text-sm leading-6 text-gray-300 hover:text-white transition duration-100">FAQ</a>
-                            </li>
-                            <li>
-                                <a href="{{ path('app_blog') }}" class="text-sm leading-6 text-gray-300 hover:text-white transition duration-100">Blog</a>
                             </li>
                         </ul>
                     </div>
                 </div>
                 <div class="md:grid md:grid-cols-2 md:gap-8">
                     <div>
-                        <h3 class="text-sm font-semibold leading-6 text-white">Client</h3>
+                        <h3 class="text-sm font-semibold leading-6 text-white">Autres</h3>
                         <ul role="list" class="mt-6 space-y-4">
                             <li>
                                 <a href="{{ path('app_login') }}" class="text-sm leading-6 text-gray-300 hover:text-white transition duration-100">Connexion</a>
@@ -76,7 +70,7 @@
                                 <a href="#" class="text-sm leading-6 text-gray-300 hover:text-white transition duration-100">Newsletter</a>
                             </li>
                             <li>
-                                <a href="#" class="text-sm leading-6 text-gray-300 hover:text-white transition duration-100">Assistance</a>
+                                <a href="{{ path('app_blog') }}" class="text-sm leading-6 text-gray-300 hover:text-white transition duration-100">Actualités</a>
                             </li>
                         </ul>
                     </div>
@@ -94,7 +88,7 @@
                 </div>
             </div>
         </div>
-        <div class="mt-8 border-t border-white/10 pt-8 md:flex md:items-center md:justify-between">
+        <div class="mt-16 border-t border-white/10 pt-8 md:flex md:items-center md:justify-between">
             <div class="flex space-x-6 md:order-2">
                 <a href="https://www.linkedin.com/company/assurance-genevoise/" target="_blank" class="text-gray-400 hover:text-gray-200 transition duration-200">
                     <span class="sr-only">Linkedin</span>

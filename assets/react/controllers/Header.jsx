@@ -2,36 +2,39 @@
 
 import React from 'react';
 import { useState } from 'react'
-import { Dialog, DialogPanel, Popover, PopoverButton, PopoverGroup, PopoverPanel } from '@headlessui/react'
 import {
-    ArrowPathIcon,
+    Dialog,
+    DialogPanel,
+    Disclosure,
+    DisclosureButton,
+    DisclosurePanel,
+    Popover,
+    PopoverButton,
+    PopoverGroup,
+    PopoverPanel,
+} from '@headlessui/react'
+
+import {
     Bars3Icon,
-    ChartPieIcon,
-    CursorArrowRaysIcon,
-    FingerPrintIcon,
-    SquaresPlusIcon,
     XMarkIcon,
+    ShieldCheckIcon,
+    EyeIcon,
+    GlobeAltIcon
 } from '@heroicons/react/24/outline'
 import { ChevronDownIcon, PhoneIcon, PlayCircleIcon } from '@heroicons/react/20/solid'
 
 const products = [
-    { name: 'Nos assurances', description: 'Get a better understanding of your traffic', href: '#', icon: ChartPieIcon },
-    { name: 'Assistance', description: 'Speak directly to your customers', href: '#', icon: CursorArrowRaysIcon },
-    { name: 'Notre entreprise', description: 'Your customers’ data will be safe and secure', href: '#', icon: FingerPrintIcon },
+    { name: 'Assurances', description: 'Choisissez l’assurance qui vous convient', href: '#', icon: ShieldCheckIcon },
+    { name: 'Prévoyances', description: 'Planifiez votre avenir en toute sérénité', href: '#', icon: EyeIcon },
+    { name: 'Risques', description: 'Anticipez les risques, sécurisez l\'avenir', href: '#', icon: GlobeAltIcon },
 ]
 const callsToAction = [
-    { name: 'Watch demo', href: '#', icon: PlayCircleIcon },
-    { name: 'Contact sales', href: '#', icon: PhoneIcon },
+    { name: 'On vous rappelle', href: '#', icon: PhoneIcon },
 ]
-const company = [
-    { name: 'About us', href: '#', description: 'Learn more about our company values and mission to empower others' },
-    { name: 'Careers', href: '#', description: 'Looking for you next career opportunity? See all of our open positions' },
-    {
-        name: 'Support',
-        href: '#',
-        description: 'Get in touch with our dedicated support team or reach out on our community forums',
-    },
-    { name: 'Blog', href: '#', description: 'Read our latest announcements and get perspectives from our team' },
+const support = [
+    { name: 'Sinistre et assistance', href: '#', description: 'Support immédiat en cas d\'urgence, disponible 24h/24 et 7j/7 pour vous aider' },
+    { name: 'Qui sommes-nous ?', href: '#', description: 'Découvrez notre histoire et nos valeurs qui nous définissent' },
+    { name: 'FAQ', href: '#', description: 'Trouvez rapidement les réponses à vos questions fréquentes' },
 ]
 
 export default function Header() {
@@ -50,8 +53,8 @@ export default function Header() {
                     <PopoverGroup className="hidden lg:flex lg:gap-x-8 ml-8">
                         <Popover className="relative">
                             <PopoverButton
-                                className="flex items-center gap-x-1 text-sm font-semibold leading-6 text-gray-900">
-                                Assurances et Risques
+                                className="flex items-center gap-x-1 text-sm font-semibold leading-6 text-gray-900 focus:outline-none">
+                                Nos services
                                 <ChevronDownIcon aria-hidden="true" className="h-5 w-5 flex-none text-gray-400"/>
                             </PopoverButton>
 
@@ -63,12 +66,12 @@ export default function Header() {
                                     {products.map((item) => (
                                         <div
                                             key={item.name}
-                                            className="group relative flex gap-x-6 rounded-lg p-4 text-sm leading-6 hover:bg-gray-50"
+                                            className="group relative flex gap-x-6 rounded-lg p-4 text-sm leading-6 hover:bg-gray-50 transition duration-100"
                                         >
                                             <div
-                                                className="mt-1 flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
+                                                className="mt-1 flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white transition duration-100">
                                                 <item.icon aria-hidden="true"
-                                                           className="h-6 w-6 text-gray-600 group-hover:text-indigo-600"/>
+                                                           className="h-6 w-6 text-gray-600 group-hover:text-primary transition duration-100"/>
                                             </div>
                                             <div className="flex-auto">
                                                 <a href={item.href} className="block font-semibold text-gray-900">
@@ -80,7 +83,7 @@ export default function Header() {
                                         </div>
                                     ))}
                                 </div>
-                                <div className="grid grid-cols-2 divide-x divide-gray-900/5 bg-gray-50">
+                                <div className="grid grid-cols-1 divide-x divide-gray-900/5 bg-gray-50 transition duration-100">
                                     {callsToAction.map((item) => (
                                         <a
                                             key={item.name}
@@ -95,9 +98,8 @@ export default function Header() {
                             </PopoverPanel>
                         </Popover>
                         <Popover className="relative">
-                            <PopoverButton
-                                className="flex items-center gap-x-1 text-sm font-semibold leading-6 text-gray-900">
-                                Assistance
+                            <PopoverButton className="flex items-center gap-x-1 text-sm font-semibold leading-6 text-gray-900 focus:outline-none">
+                                Support
                                 <ChevronDownIcon aria-hidden="true" className="h-5 w-5 flex-none text-gray-400"/>
                             </PopoverButton>
 
@@ -105,8 +107,8 @@ export default function Header() {
                                 transition
                                 className="absolute -left-8 top-full z-10 mt-3 w-96 rounded-3xl bg-white p-4 shadow-lg ring-1 ring-gray-900/5 transition data-[closed]:translate-y-1 data-[closed]:opacity-0 data-[enter]:duration-200 data-[leave]:duration-150 data-[enter]:ease-out data-[leave]:ease-in"
                             >
-                                {company.map((item) => (
-                                    <div key={item.name} className="relative rounded-lg p-4 hover:bg-gray-50">
+                                {support.map((item) => (
+                                    <div key={item.name} className="relative rounded-lg p-4 hover:bg-gray-50 transition duration-100">
                                         <a href={item.href}
                                            className="block text-sm font-semibold leading-6 text-gray-900">
                                             {item.name}
@@ -117,14 +119,14 @@ export default function Header() {
                                 ))}
                             </PopoverPanel>
                         </Popover>
-                        <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
-                            Notre entreprise
+                        <a href="/blog" className="text-sm font-semibold leading-6 text-gray-900 focus:outline-none">
+                            Actualités
                         </a>
                     </PopoverGroup>
                 </div>
                 <div className="flex gap-x-6">
                     <div className="flex flex-1 justify-end gap-x-6 items-center">
-                        <div className="flex items-center gap-x-4">
+                        <div className="flex items-center gap-x-4 phone-header">
                             <span className="relative flex h-3 w-3">
                                 <span
                                     className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
@@ -170,7 +172,7 @@ export default function Header() {
                                 />
                             </a>
                             <div className="flex gap-x-6">
-                                <div className="flex items-center gap-x-4">
+                                <div className="flex items-center gap-x-4 phone-header">
                                     <span className="relative flex h-3 w-3">
                                         <span
                                             className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
@@ -196,30 +198,71 @@ export default function Header() {
                         <div className="mt-6 flow-root">
                             <div className="-my-6 divide-y divide-gray-500/10">
                                 <div className="space-y-2 py-6">
-                                    {products.map((item) => (
-                                        <a
-                                            key={item.name}
-                                            href={item.href}
-                                            className="group -mx-3 flex items-center gap-x-6 rounded-lg p-3 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
-                                        >
-                                            <div
-                                                className="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
-                                                <item.icon aria-hidden="true" className="h-6 w-6 text-gray-600 group-hover:text-primary" />
-                                            </div>
-                                            {item.name}
-                                        </a>
-                                    ))}
+                                    <Disclosure as="div" className="-mx-3">
+                                        <DisclosureButton
+                                            className="group flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50 transition duration-100">
+                                            Nos services
+                                            <ChevronDownIcon aria-hidden="true"
+                                                             className="h-5 w-5 flex-none group-data-[open]:rotate-180"/>
+                                        </DisclosureButton>
+                                        <DisclosurePanel className="mt-2 space-y-2">
+                                            {[...products].map((item) => (
+                                                <DisclosureButton
+                                                    key={item.name}
+                                                    as="a"
+                                                    href={item.href}
+                                                    className="block rounded-lg py-2 pl-6 pr-3 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50 transition duration-100"
+                                                >
+                                                    <div
+                                                        key={item.name}
+                                                        className="group relative flex gap-x-6 rounded-lg p-2 text-sm leading-6 hover:bg-gray-50 transition duration-100"
+                                                    >
+                                                        <div
+                                                            className="mt-1 flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white transition duration-100">
+                                                            <item.icon aria-hidden="true"
+                                                                       className="h-6 w-6 text-gray-600 group-hover:text-primary transition duration-100"/>
+                                                        </div>
+                                                        <div className="flex-auto">
+                                                            <a href={item.href}
+                                                               className="block font-semibold text-gray-900">
+                                                                {item.name}
+                                                                <span className="absolute inset-0"/>
+                                                            </a>
+                                                            <p className="mt-1 text-gray-600 font-normal">{item.description}</p>
+                                                        </div>
+                                                    </div>
+                                                </DisclosureButton>
+                                            ))}
+                                        </DisclosurePanel>
+                                    </Disclosure>
+                                    <Disclosure as="div" className="-mx-3">
+                                        <DisclosureButton
+                                            className="group flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50 transition duration-100">
+                                            Support
+                                            <ChevronDownIcon aria-hidden="true"
+                                                             className="h-5 w-5 flex-none group-data-[open]:rotate-180"/>
+                                        </DisclosureButton>
+                                        <DisclosurePanel className="mt-2 space-y-2">
+                                            {[...support].map((item) => (
+                                                <DisclosureButton
+                                                    key={item.name}
+                                                    as="a"
+                                                    href={item.href}
+                                                    className="block rounded-lg py-2 pl-6 pr-3 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50 transition duration-100"
+                                                >
+                                                    {item.name}
+                                                </DisclosureButton>
+                                            ))}
+                                        </DisclosurePanel>
+                                    </Disclosure>
+                                    <a href="/blog" className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50 transition duration-100">
+                                        Actualités
+                                    </a>
                                 </div>
                                 <div className="space-y-2 py-6">
-                                    {company.map((item) => (
-                                        <a
-                                            key={item.name}
-                                            href={item.href}
-                                            className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
-                                        >
-                                            {item.name}
-                                        </a>
-                                    ))}
+                                    <a href="/connexion" className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50 transition duration-100">
+                                    Connexion
+                                    </a>
                                 </div>
                                 <div className="space-y-2 py-6">
                                     <a href="/contact"

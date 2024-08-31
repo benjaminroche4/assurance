@@ -3,5 +3,87 @@
 {% block title %}Hello BookingController!{% endblock %}
 
 {% block body %}
-    {{ form(form) }}
+    <section class="max-w-7xl bg-cover bg-center mx-auto rounded-3xl" style="background-image: url('{{ asset('media/site/3.jpg') }}')">
+        <div class="lex min-h-full flex-col justify-center px-12 py-24 lg:px-8 bg-gray-800 bg-opacity-80 rounded-3xl">
+            <div class="text-left mx-auto max-w-2xl py-10">
+                {% for message in app.flashes('success') %}
+                    <div class="rounded-md bg-green-50 p-4 mb-8 inline-block">
+                        <div class="flex">
+                            <div class="flex-shrink-0">
+                                <svg class="h-5 w-5 text-green-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clip-rule="evenodd" />
+                                </svg>
+                            </div>
+                            <div class="ml-3 text-sm font-medium text-green-800">
+                                <p>{{ message }}</p>
+                            </div>
+                        </div>
+                    </div>
+                {% endfor %}
+                <h2 class="text-4xl font-semibold leading-tight tracking-tight text-white sm:text-5xl">Besoin d'un conseil ?<br/> On vous rappelle !</h2>
+                <p class="mt-6 text-lg leading-8 text-gray-300">Une conseillère ou un conseiller va vous rappeler immédiatement et gratuitement, durant les heures d’ouverture.</p>
+                {{ form_start(form) }}
+                    <div class="mt-4 sm:mt-8 sm:flex sm:max-w-md justify-start gap-x-2 sm:space-y-0 space-y-2">
+                        <label class="sr-only">{{ form_label(form.phoneNumber, 'Numéro de téléphone') }}</label>
+                        {{ form_widget(form.phoneNumber, {'attr': {'autocomplete':'tel', 'class':'min-w-0 flex-auto rounded-md border-0 bg-white px-5 py-3 text-gray-900 ring-1 ring-inset ring-white/10 focus:ring-2 focus:ring-inset focus:ring-primary sm:text-sm sm:leading-6 w-full sm:w-auto', 'placeholder': 'Numéro de téléphone'}}) }}
+                        <button type="submit" class="flex-none rounded-md bg-primary px-5 py-3 text-sm font-semibold text-white hover:bg-primary-light focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary w-full sm:w-auto transition duration-100">Rappelez-moi</button>
+                    </div>
+                    <div class="text-red-400 text-sm mt-4">
+                        <p>{{ form_errors(form.phoneNumber) }}</p>
+                    </div>
+                {{ form_end(form) }}
+                <div class="sm:max-w-md mt-4">
+                    <p class="text-xs text-gray-400">Vous déclarez avoir pris connaissance de la politique de confidentialité de Assurance Genevoise.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="mx-auto max-w-7xl lg:px-8 bg-primary rounded-3xl py-24 mt-5">
+            <div class="mx-auto max-w-2xl lg:max-w-none px-10">
+                <dl class="grid max-w-xl grid-cols-1 gap-x-10 gap-y-16 lg:max-w-none lg:grid-cols-3">
+                    <div class="flex flex-col">
+                        <dt class="text-base font-semibold leading-7 text-white">
+                            <div class="mb-6 flex h-10 w-10 items-center justify-center rounded-lg bg-secondary">
+                                <svg class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M10.125 2.25h-4.5c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125v-9M10.125 2.25h.375a9 9 0 0 1 9 9v.375M10.125 2.25A3.375 3.375 0 0 1 13.5 5.625v1.5c0 .621.504 1.125 1.125 1.125h1.5a3.375 3.375 0 0 1 3.375 3.375M9 15l2.25 2.25L15 12" />
+                                </svg>
+                            </div>
+                            Devis Gratuit
+                        </dt>
+                        <dd class="mt-1 flex flex-auto flex-col text-base leading-7 text-gray-200">
+                            <p class="flex-auto">Et quod quaerat dolorem quaerat architecto aliquam accusantium. Ex adipisci et doloremque autem quia quam.</p>
+                        </dd>
+                    </div>
+                    <div class="flex flex-col">
+                        <dt class="text-base font-semibold leading-7 text-white">
+                            <div class="mb-6 flex h-10 w-10 items-center justify-center rounded-lg bg-secondary">
+                                <svg class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="m3.75 13.5 10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75Z" />
+                                </svg>
+                            </div>
+                            Assistance 24h-7j
+                        </dt>
+                        <dd class="mt-1 flex flex-auto flex-col text-base leading-7 text-gray-200">
+                            <p class="flex-auto">Et quod quaerat dolorem quaerat architecto aliquam accusantium. Ex adipisci et doloremque autem quia quam.</p>
+                        </dd>
+                    </div>
+                    <div class="flex flex-col">
+                        <dt class="text-base font-semibold leading-7 text-white">
+                            <div class="mb-6 flex h-10 w-10 items-center justify-center rounded-lg bg-secondary">
+                                <svg class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 21h19.5m-18-18v18m10.5-18v18m6-13.5V21M6.75 6.75h.75m-.75 3h.75m-.75 3h.75m3-6h.75m-.75 3h.75m-.75 3h.75M6.75 21v-3.375c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21M3 3h12m-.75 4.5H21m-3.75 3.75h.008v.008h-.008v-.008Zm0 3h.008v.008h-.008v-.008Zm0 3h.008v.008h-.008v-.008Z" />
+                                </svg>
+                            </div>
+                            20 ans d'expérience
+                        </dt>
+                        <dd class="mt-1 flex flex-auto flex-col text-base leading-7 text-gray-200">
+                            <p class="flex-auto">Et quod quaerat dolorem quaerat architecto aliquam accusantium. Ex adipisci et doloremque autem quia quam.</p>
+                        </dd>
+                    </div>
+                </dl>
+            </div>
+        </div>
+    </section>
+
 {% endblock %}
