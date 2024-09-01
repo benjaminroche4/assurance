@@ -16,7 +16,7 @@
     </head>
     <body>
         <header {{ react_component('Header') }}></header>
-        <main class="px-5 mt-20 sm:mt-24">
+        <main class="px-5 mt-20 sm:mt-28">
             {% block body %}{% endblock %}
 
             {% set current_route = app.request.attributes.get('_route') %}
