@@ -3,7 +3,7 @@
 {% block title %}Hello BlogController!{% endblock %}
 
 {% block body %}
-    <section class="bg-white py-10 sm:py-20">
+    <section class="bg-white py-10 sm:py-24">
         <div class="mx-auto max-w-7xl lg:px-8">
             <div class="max-w-2xl">
                 <div class="flex gap-x-5 items-center">
@@ -12,7 +12,7 @@
                 </div>
                 <p class="mt-5 text-md sm:text-lg leading-6 text-gray-600">Retrouvez nos articles et actualités autours du monde de l'assurance.</p>
             </div>
-            <div class="mx-auto mt-12 sm:mt-16 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-12 lg:mx-0 lg:max-w-none lg:grid-cols-3">
+            <div class="mx-auto mt-12 sm:mt-16 grid grid-cols-1 gap-x-8 gap-y-12 lg:mx-0 lg:max-w-none md:grid-cols-2 lg:grid-cols-3">
                 {% for post in blogPosts %}
                     <article class="flex flex-col items-start justify-between">
                         <a href="{{ path('app_blog_post', {'slug': post.slug }) }}">

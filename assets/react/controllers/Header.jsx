@@ -32,7 +32,7 @@ const callsToAction = [
     { name: 'On vous rappelle', href: '#', icon: PhoneIcon },
 ]
 const support = [
-    { name: 'Sinistre et assistance', href: '#', description: 'Support immédiat en cas d\'urgence, disponible 24h/24 et 7j/7 pour vous aider' },
+    { name: 'Sinistre et assistance', href: '/assistance', description: 'Support immédiat en cas d\'urgence, disponible 24h/24 et 7j/7 pour vous aider' },
     { name: 'Qui sommes-nous ?', href: '#', description: 'Découvrez notre histoire et nos valeurs qui nous définissent' },
     { name: 'FAQ', href: '#', description: 'Trouvez rapidement les réponses à vos questions fréquentes' },
 ]
