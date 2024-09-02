@@ -24,9 +24,9 @@ import {
 import { ChevronDownIcon, PhoneIcon, PlayCircleIcon } from '@heroicons/react/20/solid'
 
 const products = [
-    { name: 'Assurances', description: 'Choisissez l’assurance qui vous convient', href: '#', icon: ShieldCheckIcon },
-    { name: 'Prévoyances', description: 'Planifiez votre avenir en toute sérénité', href: '#', icon: EyeIcon },
-    { name: 'Risques', description: 'Anticipez les risques, sécurisez l\'avenir', href: '#', icon: GlobeAltIcon },
+    { name: 'Assurances', description: 'Choisissez l’assurance qui vous convient', href: '/assurances', icon: ShieldCheckIcon },
+    { name: 'Prévoyances', description: 'Planifiez votre avenir en toute sérénité', href: '/prevoyances', icon: EyeIcon },
+    { name: 'Risques', description: 'Anticipez les risques, sécurisez l\'avenir', href: '/risques', icon: GlobeAltIcon },
 ]
 const callsToAction = [
     { name: 'On vous rappelle', href: '#', icon: PhoneIcon },
@@ -34,7 +34,7 @@ const callsToAction = [
 const support = [
     { name: 'Sinistre et assistance', href: '/assistance', description: 'Support immédiat en cas d\'urgence, disponible 24h/24 et 7j/7 pour vous aider' },
     { name: 'Qui sommes-nous ?', href: '#', description: 'Découvrez notre histoire et nos valeurs qui nous définissent' },
-    { name: 'FAQ', href: '#', description: 'Trouvez rapidement les réponses à vos questions fréquentes' },
+    { name: 'FAQ', href: '/faq', description: 'Trouvez rapidement les réponses à vos questions fréquentes' },
 ]
 
 export default function Header() {
@@ -270,7 +270,7 @@ export default function Header() {
                                         Contactez-nous
                                         <span aria-hidden="true" className="ml-2">→</span>
                                     </a>
-                                    <a href="#"
+                                    <a href="/rappelez-moi"
                                        className="-mx-3 w-full flex gap-x-1.5 text-sm font-semibold leading-6 text-gray-900 bg-gray-50 px-4 py-3 rounded-full items-center justify-center hover:bg-gray-100 transition duration-100">
                                         <img src="/media/site/2.jpg" alt=""
                                              className="w-7 h-7 rounded-full"/>
