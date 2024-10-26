@@ -1,0 +1,56 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{% endblock %}
+
+{% block body %}
+    <section class="flex min-h-full flex-col justify-center bg-no-repeat bg-cover bg-center -mb-10" style="background-image: url('{{ asset('media/website/ag-contact.jpg') }}')">
+        <div class="bg-gray-900 bg-opacity-80 px-6 py-32 lg:px-8 pt-44 lg:pt-48">
+            <div class="sm:mx-auto sm:w-full sm:max-w-sm">
+                <img class="mx-auto h-6 w-auto" src="{{ asset('media/logo/logo.svg') }}" alt="">
+                <h1 class="mt-10 text-center text-2xl font-bold leading-9 tracking-tight text-white">Connexion à votre espace client</h1>
+            </div>
+            <div class="mt-10 sm:mx-auto sm:w-full sm:max-w-sm">
+                <form class="space-y-6" method="post">
+                    {% if error %}
+                        <div class="rounded-md bg-red-50 p-4">
+                            <div class="flex">
+                                <div class="flex-shrink-0">
+                                    <svg class="h-5 w-5 text-red-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clip-rule="evenodd" />
+                                    </svg>
+                                </div>
+                                <div class="ml-3">
+                                    <p class="text-sm font-medium text-red-800">{{ error.messageKey|trans(error.messageData, 'security') }}</p>
+                                </div>
+                            </div>
+                        </div>
+                    {% endif %}
+                    <div>
+                        <label for="username" class="block text-sm font-medium leading-6 text-white">Adresse email</label>
+                        <div class="mt-2">
+                            <input name="_username" id="username" value="{{ last_username }}" type="email" autocomplete="email" required class="block w-full rounded-md border-0 bg-white/5 py-1.5 text-white shadow-sm ring-1 ring-inset ring-white/10 focus:ring-2 focus:ring-inset focus:ring-white sm:text-sm sm:leading-6">
+                        </div>
+                    </div>
+                    <div>
+                        <div class="flex items-center justify-between">
+                            <label for="password" class="block text-sm font-medium leading-6 text-white">Mot de passe</label>
+                        </div>
+                        <div class="mt-2">
+                            <input id="password" name="password" type="password" autocomplete="current-password" required class="block w-full rounded-md border-0 bg-white/5 py-1.5 text-white shadow-sm ring-1 ring-inset ring-white/10 focus:ring-2 focus:ring-inset focus:ring-gray-100 sm:text-sm sm:leading-6">
+                        </div>
+                    </div>
+                    <input type="hidden" name="_csrf_token"
+                           value="{{ csrf_token('authenticate') }}"
+                    >
+                    <div>
+                        <button type="submit" class="flex w-full justify-center rounded-full bg-white px-4 py-3 text-sm font-semibold leading-6 text-gray-900 hover:bg-white/20 border hover:border-white hover:text-white transition duration-200">Connexion</button>
+                    </div>
+                </form>
+                <p class="mt-10 text-center text-sm text-gray-200">
+                    Pas encore client ?
+                    <a href="{{ path('app_contact') }}" class="text-sm font-semibold leading-6 text-gray-200 hover:text-white transition duration-200">Contactez-nous</a>.
+                </p>
+            </div>
+        </div>
+    </section>
+{% endblock %}

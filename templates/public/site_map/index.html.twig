@@ -1,0 +1,72 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{% endblock %}
+
+{% block body %}
+    <section class="bg-white py-24 sm:py-32 mt-5 lg:mt-10">
+        <div class="mx-auto max-w-2xl lg:max-w-7xl px-6 lg:px-8">
+            <div class="mx-auto max-w-2xl lg:mx-0">
+                <p class="text-sm font-semibold leading-7 text-primary uppercase tracking-wide">Liens</p>
+                <h1 class="mt-2 text-5xl font-bold tracking-tight text-gray-900 sm:text-6xl">Sitemap</h1>
+            </div>
+            <div class="mt-16 sm:mt-20 space-y-10">
+                <div>
+                    <h2 class="text-2xl font-semibold">Générale</h2>
+                    <ul class="mt-6 space-y-2 list-disc ml-8">
+                        <li class="text-lg"><a href="{{ path('app_home') }}" class="font-secondary text-gray-800 hover:text-gray-600 transition duration-100">Accueil</a></li>
+                        <li class="text-lg"><a href="{{ path('app_assistance') }}" class="font-secondary text-gray-800 hover:text-gray-600 transition duration-100">Sinistre et Assistance</a></li>
+                        <li class="text-lg"><a href="{{ path('app_login') }}" class="font-secondary text-gray-800 hover:text-gray-600 transition duration-100">Mon compte client</a></li>
+                        <li class="text-lg"><a href="{{ path('app_contact') }}" class="font-secondary text-gray-800 hover:text-gray-600 transition duration-100">Contactez-nous</a></li>
+                        <li class="text-lg"><a href="{{ path('app_faq') }}" class="font-secondary text-gray-800 hover:text-gray-600 transition duration-100">FAQ</a></li>
+                        <li class="text-lg"><a href="{{ path('app_legal_notice') }}" class="font-secondary text-gray-800 hover:text-gray-600 transition duration-100">Mentions légales</a></li>
+                        <li class="text-lg"><a href="{{ path('app_personal_data') }}" class="font-secondary text-gray-800 hover:text-gray-600 transition duration-100">Données personnelles</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h2 class="text-2xl font-semibold">Professionnel</h2>
+                    <ul class="mt-6 space-y-2 list-disc ml-8">
+                        <li class="text-lg"><a href="{{ path('app_pro_offer_company') }}" class="font-secondary text-gray-800 hover:text-gray-600 transition duration-100">Entreprise</a></li>
+                            <li class="ml-8 text-lg"><a href="{{ path('app_pro_offer_company') }}" class="font-secondary text-gray-800 hover:text-gray-600 transition duration-100">Assurance chose et patrimoine</a></li>
+                            <li class="ml-8 text-lg"><a href="{{ path('app_pro_offer_company') }}" class="font-secondary text-gray-800 hover:text-gray-600 transition duration-100">Contrat collectif et perte de gain</a></li>
+                            <li class="ml-8 text-lg"><a href="{{ path('app_pro_offer_company') }}" class="font-secondary text-gray-800 hover:text-gray-600 transition duration-100">L'assurance-accident LAA</a></li>
+                            <li class="ml-8 text-lg"><a href="{{ path('app_pro_offer_company') }}" class="font-secondary text-gray-800 hover:text-gray-600 transition duration-100">Prévoyance professionnel et LPP</a></li>
+                            <li class="ml-8 text-lg"><a href="{{ path('app_pro_offer_company') }}" class="font-secondary text-gray-800 hover:text-gray-600 transition duration-100">Caution et garanties</a></li>
+                        <li class="text-lg"><a href="{{ path('app_pro_offer_border') }}" class="font-secondary text-gray-800 hover:text-gray-600 transition duration-100">Frontalier</a></li>
+                            <li class="ml-8 text-lg"><a href="{{ path('app_pro_offer_border_health_insurance') }}" class="font-secondary text-gray-800 hover:text-gray-600 transition duration-100">Prévoyance</a></li>
+                            <li class="ml-8 text-lg"><a href="{{ path('app_pro_offer_border_health') }}" class="font-secondary text-gray-800 hover:text-gray-600 transition duration-100">Santé</a></li>
+                            <li class="ml-8 text-lg"><a href="{{ path('app_pro_offer_border_exchange_rate') }}" class="font-secondary text-gray-800 hover:text-gray-600 transition duration-100">Taux de change</a></li>
+                        <li class="text-lg"><a href="{{ path('app_pro_offer_international') }}" class="font-secondary text-gray-800 hover:text-gray-600 transition duration-100">International</a></li>
+                            <li class="ml-8 text-lg"><a href="{{ path('app_pro_offer_international_health_insurance') }}" class="font-secondary text-gray-800 hover:text-gray-600 transition duration-100">Assurance maladie internationale</a></li>
+                            <li class="ml-8 text-lg"><a href="{{ path('app_pro_offer_international_solution') }}" class="font-secondary text-gray-800 hover:text-gray-600 transition duration-100">Solution internationale avec nos partenaires</a></li>
+                        <li class="text-lg"><a href="{{ path('app_pro_offer_international') }}" class="font-secondary text-gray-800 hover:text-gray-600 transition duration-100">Profession libérale</a></li>
+                        <li class="ml-8 text-lg"><a href="{{ path('app_offer_liberal_profession_professional_services') }}" class="font-secondary text-gray-800 hover:text-gray-600 transition duration-100">Services professionnels</a></li>
+                        <li class="ml-8 text-lg"><a href="{{ path('app_offer_liberal_profession_medical') }}" class="font-secondary text-gray-800 hover:text-gray-600 transition duration-100">Médical</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h2 class="text-2xl font-semibold">Particulier</h2>
+                    <ul class="mt-6 space-y-2 list-disc ml-8">
+                        <li class="text-lg"><a href="" class="font-secondary text-gray-800 hover:text-gray-600 transition duration-100">Santé</a></li>
+                        <li class="text-lg"><a href="" class="font-secondary text-gray-800 hover:text-gray-600 transition duration-100">Prévoyance</a></li>
+                        <li class="text-lg"><a href="" class="font-secondary text-gray-800 hover:text-gray-600 transition duration-100">Hypothéque</a></li>
+                        <li class="text-lg"><a href="" class="font-secondary text-gray-800 hover:text-gray-600 transition duration-100">Assurance</a></li>
+                        <li class="text-lg"><a href="" class="font-secondary text-gray-800 hover:text-gray-600 transition duration-100">Fiscalité</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h2 class="text-2xl font-semibold">Blog</h2>
+                    <ul class="mt-6 space-y-2 list-disc ml-8">
+                        {% for post in blogPosts %}
+                            <li class="text-lg">
+                                <a href="{{ path('app_blog_post', {'slug': post.slug }) }}" class="font-secondary text-gray-800 hover:text-gray-600 transition duration-100">
+                                    {{ post.title }}
+                                </a>
+                                <time datetime="{{ post.createdAt | date('d F Y') }}" class="capitalize text-gray-400 text-base">{{ post.createdAt | date('d F Y') | format_date(locale='fr') }}</time>
+                            </li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock %}

@@ -1,3 +1,49 @@
-body {
-    background-color: skyblue;
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@200;300;400;500;600&family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+h1, h2, h3, h4, h5, h6{
+    font-family: Montserrat,sans-serif;
+}
+
+body{
+    font-family: Barlow, sans-serif;
+}
+
+a {
+    font-family: Montserrat,sans-serif;
+}
+
+p > a {
+    font-family: Barlow,sans-serif;
+}
+
+.font-primary {
+    font-family: Montserrat,sans-serif;
+}
+
+.font-secondary {
+    font-family: Barlow,sans-serif;
+}
+
+@media (max-width: 330px) {
+    #phone-header {
+        display: none;
+    }
+
+    .social-media {
+        display: none;
+    }
+
+    #adress-information {
+        display: none;
+    }
+}
+
+@media (max-width: 528px) {
+    #adress-information {
+        display: none;
+    }
 }

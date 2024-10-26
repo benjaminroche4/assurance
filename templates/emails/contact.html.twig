@@ -1,0 +1,12 @@
+<h1 class="text-green-600">Nouveau contact du site internet :</h1>
+<p>{{ createdAt | date('d F Y') | format_date(locale='fr') }} à {{ createdAt | date('H:i') }}</p>
+<br/><br/>
+<p><span>Type de client :</span>  {{ contactType }}</p>
+<p><span>Nom/Prénom :</span>  {{ fullName }}</p>
+<p><span>Entreprise :</span>  {{ company }}</p>
+<p><span>Email :</span>  {{ email }}</p>
+<p><span>Téléphone :</span>  {{ phoneNumber }}</p>
+<p><span>Sujet :</span>  {{ subject }}</p>
+<p><span>Message :</span> {{ message }}</p>
+<br/><br/><br/>
+<small class="text-gray-400">Cet email provient du formulaire de contact de assurance-genevoise.ch.</small>
