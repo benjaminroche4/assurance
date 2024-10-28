@@ -6,7 +6,45 @@
     <section class="bg-white py-24 sm:pt-32 sm:pb-12 mt-5 lg:mt-10">
         <div class="mx-auto max-w-2xl lg:max-w-7xl px-6 lg:px-8 grid lg:grid-cols-3 items-center gap-x-6">
             <div class="mx-auto max-w-2xl lg:mx-0 lg:col-span-2">
-                <p class="text-sm font-semibold leading-7 text-primary uppercase tracking-wide">Professionnel</p>
+                <nav class="flex" aria-label="Breadcrumb">
+                    <ol role="list" class="flex items-center space-x-4">
+                        <li>
+                            <div>
+                                <a href="{{ path('app_home') }}" class="text-gray-400 hover:text-gray-500">
+                                    <svg class="h-4 w-4 flex-shrink-0" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+                                        <path fill-rule="evenodd" d="M9.293 2.293a1 1 0 0 1 1.414 0l7 7A1 1 0 0 1 17 11h-1v6a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1v-3a1 1 0 0 0-1-1H9a1 1 0 0 0-1 1v3a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1v-6H3a1 1 0 0 1-.707-1.707l7-7Z" clip-rule="evenodd" />
+                                    </svg>
+                                    <span class="sr-only">Home</span>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="hidden sm:block">
+                            <div class="flex items-center">
+                                <svg class="h-5 w-5 flex-shrink-0 text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+                                    <path fill-rule="evenodd" d="M8.22 5.22a.75.75 0 0 1 1.06 0l4.25 4.25a.75.75 0 0 1 0 1.06l-4.25 4.25a.75.75 0 0 1-1.06-1.06L11.94 10 8.22 6.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" />
+                                </svg>
+                                <a href="#" class="ml-4 text-xs font-medium text-gray-500 hover:text-gray-700">Professionnel</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="flex items-center">
+                                <svg class="h-5 w-5 flex-shrink-0 text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+                                    <path fill-rule="evenodd" d="M8.22 5.22a.75.75 0 0 1 1.06 0l4.25 4.25a.75.75 0 0 1 0 1.06l-4.25 4.25a.75.75 0 0 1-1.06-1.06L11.94 10 8.22 6.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" />
+                                </svg>
+                                <a href="{{ path('app_pro_offer_international') }}" class="ml-4 text-xs font-medium text-gray-500 hover:text-gray-700">International</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="flex items-center">
+                                <svg class="h-5 w-5 flex-shrink-0 text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+                                    <path fill-rule="evenodd" d="M8.22 5.22a.75.75 0 0 1 1.06 0l4.25 4.25a.75.75 0 0 1 0 1.06l-4.25 4.25a.75.75 0 0 1-1.06-1.06L11.94 10 8.22 6.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" />
+                                </svg>
+                                <a href="{{ path('app_pro_offer_international_health_insurance') }}" class="ml-4 text-xs font-medium text-gray-500 hover:text-gray-700" aria-current="page">Assurance maladie international</a>
+                            </div>
+                        </li>
+                    </ol>
+                </nav>
+                <p class="text-sm font-semibold leading-7 text-primary uppercase tracking-wide mt-10">Professionnel</p>
                 <h1 class="mt-2 text-5xl font-bold tracking-tight text-gray-900 sm:text-6xl capitalize">Assurance maladie international</h1>
                 <p class="mt-6 text-lg leading-8 text-gray-600">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration. But the majority have suffered alteration.</p>
                 <div class="mt-10">
