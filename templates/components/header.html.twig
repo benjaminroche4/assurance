@@ -6,10 +6,8 @@
                 <img class="h-6 w-auto" src="{{ asset('media/logo/logo.svg') }}" alt="Logo Assurance Genevoise">
             </a>
             <div class="hidden lg:flex lg:gap-x-8">
-                <a href="#" class="text-sm font-semibold leading-6 text-white hover:text-gray-300 transition duration-300">Entreprise</a>
-                <a href="#" class="text-sm font-semibold leading-6 text-white hover:text-gray-300 transition duration-300">Frontalier</a>
-                <a href="#" class="text-sm font-semibold leading-6 text-white hover:text-gray-300 transition duration-300">International</a>
-                <a href="{{ path('app_blog_list') }}" class="text-sm font-semibold leading-6 text-white hover:text-gray-300 transition duration-300">Blog</a>
+                <a href="#" class="text-sm font-semibold leading-6 text-white hover:text-gray-300 transition duration-300">Je suis un professionnel</a>
+                <a href="" class="text-sm font-semibold leading-6 text-white hover:text-gray-300 transition duration-300">Je suis un particulier</a>
             </div>
         </div>
         <div class="flex lg:hidden gap-6">
@@ -28,8 +26,13 @@
         </div>
         <div class="hidden lg:flex lg:flex-1 lg:justify-end gap-5">
             <div class="hidden lg:flex items-center divide-x divide-gray-200">
-                <a href="#" class="text-sm font-semibold leading-6 text-white px-2 underline underline-offset-4 hover:text-gray-300 transition duration-100">Professionnel</a>
-                <a href="#" class="text-sm font-semibold leading-6 text-white px-2 hover:text-gray-300 transition duration-100">Particulier</a>
+                <a href="{{ path('app_assistance') }}" class="{% if app.request.attributes.get('_route') == 'app_assistance' %}underline underline-offset-4{% endif %} text-sm font-semibold leading-6 text-white px-2 hover:text-gray-300 transition duration-100">Sinistre & Assistance</a>
+                <a href="{{ path('app_login') }}" class="flex items-center gap-x-2 text-sm font-semibold leading-6 text-white px-2 hover:text-gray-300 transition duration-100">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M17.982 18.725A7.488 7.488 0 0 0 12 15.75a7.488 7.488 0 0 0-5.982 2.975m11.963 0a9 9 0 1 0-11.963 0m11.963 0A8.966 8.966 0 0 1 12 21a8.966 8.966 0 0 1-5.982-2.275M15 9.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                    </svg>
+                    Compte client
+                </a>
             </div>
             <a href="{{ path('app_contact') }}" class="text-sm font-semibold leading-6 text-white bg-primary px-2.5 py-2.5 rounded-full transition duration-100 hover:bg-primary-light">Contactez-nous <span aria-hidden="true">&rarr;</span></a>
         </div>

@@ -26,11 +26,11 @@
                     <h2 class="text-2xl font-semibold">Professionnel</h2>
                     <ul class="mt-6 space-y-2 list-disc ml-8">
                         <li class="text-lg"><a href="{{ path('app_pro_offer_company') }}" class="font-secondary text-gray-800 hover:text-gray-600 transition duration-100">Entreprise</a></li>
-                            <li class="ml-8 text-lg"><a href="{{ path('app_pro_offer_company') }}" class="font-secondary text-gray-800 hover:text-gray-600 transition duration-100">Assurance chose et patrimoine</a></li>
-                            <li class="ml-8 text-lg"><a href="{{ path('app_pro_offer_company') }}" class="font-secondary text-gray-800 hover:text-gray-600 transition duration-100">Contrat collectif et perte de gain</a></li>
-                            <li class="ml-8 text-lg"><a href="{{ path('app_pro_offer_company') }}" class="font-secondary text-gray-800 hover:text-gray-600 transition duration-100">L'assurance-accident LAA</a></li>
-                            <li class="ml-8 text-lg"><a href="{{ path('app_pro_offer_company') }}" class="font-secondary text-gray-800 hover:text-gray-600 transition duration-100">Prévoyance professionnel et LPP</a></li>
-                            <li class="ml-8 text-lg"><a href="{{ path('app_pro_offer_company') }}" class="font-secondary text-gray-800 hover:text-gray-600 transition duration-100">Caution et garanties</a></li>
+                            <li class="ml-8 text-lg"><a href="{{ path('app_pro_offer_company_property_insurance') }}" class="font-secondary text-gray-800 hover:text-gray-600 transition duration-100">Assurance chose et patrimoine</a></li>
+                            <li class="ml-8 text-lg"><a href="{{ path('app_pro_offer_company_group_contract') }}" class="font-secondary text-gray-800 hover:text-gray-600 transition duration-100">Contrat collectif et perte de gain</a></li>
+                            <li class="ml-8 text-lg"><a href="{{ path('app_pro_offer_company_accident_insurance') }}" class="font-secondary text-gray-800 hover:text-gray-600 transition duration-100">L'assurance-accident LAA</a></li>
+                            <li class="ml-8 text-lg"><a href="{{ path('app_pro_offer_company_professional_provision') }}" class="font-secondary text-gray-800 hover:text-gray-600 transition duration-100">Prévoyance professionnel et LPP</a></li>
+                            <li class="ml-8 text-lg"><a href="{{ path('app_pro_offer_company_guarantees') }}" class="font-secondary text-gray-800 hover:text-gray-600 transition duration-100">Caution et garanties</a></li>
                         <li class="text-lg"><a href="{{ path('app_pro_offer_border') }}" class="font-secondary text-gray-800 hover:text-gray-600 transition duration-100">Frontalier</a></li>
                             <li class="ml-8 text-lg"><a href="{{ path('app_pro_offer_border_health_insurance') }}" class="font-secondary text-gray-800 hover:text-gray-600 transition duration-100">Prévoyance</a></li>
                             <li class="ml-8 text-lg"><a href="{{ path('app_pro_offer_border_health') }}" class="font-secondary text-gray-800 hover:text-gray-600 transition duration-100">Santé</a></li>
@@ -46,11 +46,19 @@
                 <div>
                     <h2 class="text-2xl font-semibold">Particulier</h2>
                     <ul class="mt-6 space-y-2 list-disc ml-8">
-                        <li class="text-lg"><a href="" class="font-secondary text-gray-800 hover:text-gray-600 transition duration-100">Santé</a></li>
-                        <li class="text-lg"><a href="" class="font-secondary text-gray-800 hover:text-gray-600 transition duration-100">Prévoyance</a></li>
-                        <li class="text-lg"><a href="" class="font-secondary text-gray-800 hover:text-gray-600 transition duration-100">Hypothéque</a></li>
-                        <li class="text-lg"><a href="" class="font-secondary text-gray-800 hover:text-gray-600 transition duration-100">Assurance</a></li>
-                        <li class="text-lg"><a href="" class="font-secondary text-gray-800 hover:text-gray-600 transition duration-100">Fiscalité</a></li>
+                        <li class="text-lg"><a href="{{ path('app_individual_insurance') }}" class="font-secondary text-gray-800 hover:text-gray-600 transition duration-100">Assurance</a></li>
+                        <li class="ml-8 text-lg"><a href="{{ path('app_individual_insurance_property') }}" class="font-secondary text-gray-800 hover:text-gray-600 transition duration-100">Assurance de chose et de patrimoine</a></li>
+                        <li class="ml-8 text-lg"><a href="{{ path('app_individual_insurance_household_liability') }}" class="font-secondary text-gray-800 hover:text-gray-600 transition duration-100">Assurance RC ménage</a></li>
+                        <li class="ml-8 text-lg"><a href="{{ path('app_individual_insurance_animals') }}" class="font-secondary text-gray-800 hover:text-gray-600 transition duration-100">Assurance animaux</a></li>
+                        <li class="ml-8 text-lg"><a href="{{ path('app_individual_insurance_motor_vehicle') }}" class="font-secondary text-gray-800 hover:text-gray-600 transition duration-100">Assurance véhicule à moteur</a></li>
+                        <li class="ml-8 text-lg"><a href="{{ path('app_individual_insurance_legal_protection') }}" class="font-secondary text-gray-800 hover:text-gray-600 transition duration-100">Assurance protection juridique</a></li>
+                        <li class="ml-8 text-lg"><a href="{{ path('app_individual_insurance_domestic_worker') }}" class="font-secondary text-gray-800 hover:text-gray-600 transition duration-100">Assurance employé de maison</a></li>
+                        <li class="ml-8 text-lg"><a href="{{ path('app_individual_insurance_travel') }}" class="font-secondary text-gray-800 hover:text-gray-600 transition duration-100">Assurance voyage</a></li>
+                        <li class="ml-8 text-lg"><a href="{{ path('app_individual_insurance_building_liability') }}" class="font-secondary text-gray-800 hover:text-gray-600 transition duration-100">Assurance RC immeuble et bâtiment</a></li>
+                        <li class="text-lg"><a href="{{ path('app_individual_health') }}" class="font-secondary text-gray-800 hover:text-gray-600 transition duration-100">Santé</a></li>
+                        <li class="text-lg"><a href="{{ path('app_individual_health_insurance') }}" class="font-secondary text-gray-800 hover:text-gray-600 transition duration-100">Prévoyance</a></li>
+                        <li class="text-lg"><a href="{{ path('app_individual_mortgage') }}" class="font-secondary text-gray-800 hover:text-gray-600 transition duration-100">Hypothéque</a></li>
+                        <li class="text-lg"><a href="{{ path('app_individual_taxation') }}" class="font-secondary text-gray-800 hover:text-gray-600 transition duration-100">Fiscalité</a></li>
                     </ul>
                 </div>
                 <div>
