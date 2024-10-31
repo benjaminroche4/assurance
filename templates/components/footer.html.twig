@@ -1,25 +1,25 @@
-<footer class="bg-gray-900" aria-labelledby="footer-heading">
+<footer class="bg-white" aria-labelledby="footer-heading">
     <h2 id="footer-heading" class="sr-only">Footer</h2>
-    <div class="mx-auto max-w-7xl px-6 pb-8 pt-16 sm:pt-24 lg:px-8 lg:pt-32">
+    <div class="mx-auto max-w-7xl border-t border-gray-200 px-6 pb-8 pt-16 sm:pt-24 lg:px-8 lg:pt-32">
         <div class="xl:grid xl:grid-cols-3 xl:gap-8">
             <div>
-                <img class="h-8" src="{{ asset('media/logo/logo.svg') }}" alt="Company name">
+                <img class="h-8" src="{{ asset('media/logo/logo-dark.svg') }}" alt="">
                 <div class="space-y-6 mt-8">
                     <div>
                         <div class="flex items-center gap-3">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-5 text-white">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z" />
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6 text-primary">
+                                <path fill-rule="evenodd" d="M1.5 4.5a3 3 0 0 1 3-3h1.372c.86 0 1.61.586 1.819 1.42l1.105 4.423a1.875 1.875 0 0 1-.694 1.955l-1.293.97c-.135.101-.164.249-.126.352a11.285 11.285 0 0 0 6.697 6.697c.103.038.25.009.352-.126l.97-1.293a1.875 1.875 0 0 1 1.955-.694l4.423 1.105c.834.209 1.42.959 1.42 1.82V19.5a3 3 0 0 1-3 3h-2.25C8.552 22.5 1.5 15.448 1.5 6.75V4.5Z" clip-rule="evenodd" />
                             </svg>
-                            <a href="tel:000000" class="text-2xl text-white font-primary font-semibold">225 456 251 25</a>
+                            <a href="tel:000000" class="text-2xl text-primary font-primary font-semibold">225 456 251 25</a>
                         </div>
-                        <p class="text-gray-400 mt-2">Appel Gratuit | Lun-Vend 09/19h30</p>
+                        <p class="text-gray-500 mt-2">Appel Gratuit | Lun-Vend 09/19h30</p>
                     </div>
                     <div>
                         <div class="flex items-center gap-3">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-5 text-gray-300">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-5 text-gray-900">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
                             </svg>
-                            <p class="text-md text-gray-300 font-primary font-medium">contact@assurance-genevoise.ch</p>
+                            <p class="text-md text-gray-900 font-primary font-medium">contact@assurance-genevoise.ch</p>
                         </div>
                     </div>
                 </div>
@@ -27,85 +27,91 @@
             <div class="mt-16 grid grid-cols-2 gap-8 xl:col-span-2 xl:mt-0">
                 <div class="md:grid md:grid-cols-2 md:gap-8">
                     <div>
-                        <h3 class="text-sm font-semibold leading-6 text-white">Professionnel</h3>
+                        <h3 class="text-sm font-semibold leading-6 text-gray-900">Professionnel</h3>
                         <ul role="list" class="mt-6 space-y-4">
                             <li>
-                                <a href="{{ path('app_pro_offer_company') }}" class="text-sm leading-6 text-gray-300 hover:text-white transition duration-100">Entreprise</a>
+                                <a href="{{ path('app_pro_offer_company') }}" class="text-sm leading-6 text-gray-600 hover:text-gray-500 transition duration-100">Entreprise</a>
                             </li>
                             <li>
-                                <a href="{{ path('app_pro_offer_border') }}" class="text-sm leading-6 text-gray-300 hover:text-white transition duration-100">Frontalier</a>
+                                <a href="{{ path('app_pro_offer_border') }}" class="text-sm leading-6 text-gray-600 hover:text-gray-500 transition duration-100">Frontalier</a>
                             </li>
                             <li>
-                                <a href="{{ path('app_pro_offer_international') }}" class="text-sm leading-6 text-gray-300 hover:text-white transition duration-100">International</a>
+                                <a href="{{ path('app_pro_offer_international') }}" class="text-sm leading-6 text-gray-600 hover:text-gray-500 transition duration-100">International</a>
                             </li>
                             <li>
-                                <a href="{{ path('app_offer_liberal_profession') }}" class="text-sm leading-6 text-gray-300 hover:text-white transition duration-100">Profession libérale</a>
+                                <a href="{{ path('app_pro_offer_liberal_profession') }}" class="text-sm leading-6 text-gray-600 hover:text-gray-500 transition duration-100">Profession libérale</a>
                             </li>
                         </ul>
                     </div>
                     <div class="mt-10 md:mt-0">
-                        <h3 class="text-sm font-semibold leading-6 text-white">Particulier</h3>
+                        <h3 class="text-sm font-semibold leading-6 text-gray-900">Particulier</h3>
                         <ul role="list" class="mt-6 space-y-4">
                             <li>
-                                <a href="{{ path('app_individual_insurance') }}" class="text-sm leading-6 text-gray-300 hover:text-white transition duration-100">Assurance</a>
+                                <a href="{{ path('app_individual_insurance') }}" class="text-sm leading-6 text-gray-600 hover:text-gray-500 transition duration-100">Assurance</a>
                             </li>
                             <li>
-                                <a href="{{ path('app_individual_taxation') }}" class="text-sm leading-6 text-gray-300 hover:text-white transition duration-100">Fiscalité</a>
+                                <a href="{{ path('app_individual_taxation') }}" class="text-sm leading-6 text-gray-600 hover:text-gray-500 transition duration-100">Fiscalité</a>
                             </li>
                             <li>
-                                <a href="{{ path('app_individual_health') }}" class="text-sm leading-6 text-gray-300 hover:text-white transition duration-100">Santé</a>
+                                <a href="{{ path('app_individual_health') }}" class="text-sm leading-6 text-gray-600 hover:text-gray-500 transition duration-100">Santé</a>
                             </li>
                             <li>
-                                <a href="{{ path('app_individual_mortgage') }}" class="text-sm leading-6 text-gray-300 hover:text-white transition duration-100">Hypothéque</a>
+                                <a href="{{ path('app_individual_mortgage') }}" class="text-sm leading-6 text-gray-600 hover:text-gray-500 transition duration-100">Hypothéque</a>
                             </li>
                             <li>
-                                <a href="{{ path('app_individual_health_insurance') }}" class="text-sm leading-6 text-gray-300 hover:text-white transition duration-100">Prévoyance</a>
+                                <a href="{{ path('app_individual_health_insurance') }}" class="text-sm leading-6 text-gray-600 hover:text-gray-500 transition duration-100">Prévoyance</a>
                             </li>
                         </ul>
                     </div>
                 </div>
                 <div class="md:grid md:grid-cols-2 md:gap-8">
                     <div>
-                        <h3 class="text-sm font-semibold leading-6 text-white">Support</h3>
+                        <h3 class="text-sm font-semibold leading-6 text-gray-900">Support</h3>
                         <ul role="list" class="mt-6 space-y-4">
                             <li>
-                                <a href="{{ path('app_assistance') }}" class="text-sm leading-6 text-gray-300 hover:text-white transition duration-100">Sinistre et Assistance</a>
+                                <a href="{{ path('app_assistance') }}" class="text-sm leading-6 text-gray-600 hover:text-gray-500 transition duration-100">Se faire rappeler</a>
                             </li>
                             <li>
-                                <a href="{{ path('app_login') }}" class="text-sm leading-6 text-gray-300 hover:text-white transition duration-100">Mon compte client</a>
+                                <a href="{{ path('app_assistance') }}" class="text-sm leading-6 text-gray-600 hover:text-gray-500 transition duration-100">Sinistre et Assistance</a>
                             </li>
                             <li>
-                                <a href="{{ path('app_contact') }}" class="text-sm leading-6 text-gray-300 hover:text-white transition duration-100">Contactez-nous</a>
+                                <a href="{{ path('app_login') }}" class="text-sm leading-6 text-gray-600 hover:text-gray-500 transition duration-100">Mon compte client</a>
                             </li>
                             <li>
-                                <a href="{{ path('app_faq') }}" class="text-sm leading-6 text-gray-300 hover:text-white transition duration-100">FAQ</a>
+                                <a href="{{ path('app_contact') }}" class="text-sm leading-6 text-gray-600 hover:text-gray-500 transition duration-100">Contactez-nous</a>
+                            </li>
+                            <li>
+                                <a href="{{ path('app_faq') }}" class="text-sm leading-6 text-gray-600 hover:text-gray-500 transition duration-100">FAQ</a>
+                            </li>
+                            <li>
+                                <a href="{{ path('app_blog_list') }}" class="text-sm leading-6 text-gray-600 hover:text-gray-500 transition duration-100">Blog</a>
                             </li>
                         </ul>
                     </div>
                     <div class="mt-10 md:mt-0">
-                        <h3 class="text-sm font-semibold leading-6 text-white">Légal</h3>
+                        <h3 class="text-sm font-semibold leading-6 text-gray-900">Légal</h3>
                         <ul role="list" class="mt-6 space-y-4">
                             <li>
-                                <a href="{{ path('app_legal_notice') }}" class="text-sm leading-6 text-gray-300 hover:text-white transition duration-100">Mentions légales</a>
+                                <a href="{{ path('app_legal_notice') }}" class="text-sm leading-6 text-gray-600 hover:text-gray-500 transition duration-100">Mentions légales</a>
                             </li>
                             <li>
-                                <a href="{{ path('app_personal_data') }}" class="text-sm leading-6 text-gray-300 hover:text-white transition duration-100">Données personnelles</a>
+                                <a href="{{ path('app_personal_data') }}" class="text-sm leading-6 text-gray-600 hover:text-gray-500 transition duration-100">Données personnelles</a>
                             </li>
                         </ul>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="mt-16 border-t border-white/10 pt-8 sm:mt-20 lg:mt-24 flex justify-between">
-            <p class="text-xs leading-5 text-gray-400">
+        <div class="mt-16 border-t border-gray-200 pt-8 sm:mt-20 lg:mt-24 flex justify-between">
+            <p class="text-xs leading-5 text-gray-600">
                 © 2024 Assurance Genevoise SA, Assureur à Genève. Tous droits réservés.
-                <a href="{{ path('app_site_map') }}" class="hover:text-gray-100 transition duration-100">Sitemap</a>
+                <a href="{{ path('app_site_map') }}" class="hover:text-gray-900 transition duration-100">Sitemap</a>
             </p>
             <a href="https://www.linkedin.com/company/assurance-genevoise" target="_blank" class="social-media ml-0.5">
                 <svg class="size-7" viewBox="0 0 206 206" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M103.168 205.211H102.718C46.4818 205.211 0.728516 159.444 0.728516 103.191V102.741C0.728516 46.4881 46.4818 0.721313 102.718 0.721313H103.168C159.405 0.721313 205.158 46.4881 205.158 102.741V103.191C205.158 159.444 159.405 205.211 103.168 205.211ZM102.718 7.64307C50.2946 7.64307 7.64824 50.302 7.64824 102.741V103.191C7.64824 155.63 50.2946 198.289 102.718 198.289H103.168C155.592 198.289 198.238 155.63 198.238 103.191V102.741C198.238 50.302 155.592 7.64307 103.168 7.64307H102.718Z" fill="#E2E2E2"/>
-                    <path d="M51.291 69.849C48.6892 67.4333 47.3953 64.4431 47.3953 60.8853C47.3953 57.3276 48.6962 54.2057 51.291 51.7831C53.8929 49.3674 57.242 48.1561 61.3454 48.1561C65.4488 48.1561 68.6665 49.3674 71.2614 51.7831C73.8633 54.1988 75.1572 57.2376 75.1572 60.8853C75.1572 64.5331 73.8563 67.4333 71.2614 69.849C68.6596 72.2647 65.3589 73.476 61.3454 73.476C57.332 73.476 53.8929 72.2647 51.291 69.849ZM72.9706 83.7064V157.769H49.575V83.7064H72.9706Z" fill="#E2E2E2"/>
-                    <path d="M150.852 91.0225C155.952 96.56 158.498 104.16 158.498 113.837V156.461H136.279V116.841C136.279 111.961 135.013 108.168 132.487 105.468C129.962 102.769 126.557 101.412 122.294 101.412C118.032 101.412 114.627 102.762 112.102 105.468C109.576 108.168 108.31 111.961 108.31 116.841V156.461H85.959V83.4987H108.31V93.1753C110.572 89.9497 113.624 87.4025 117.458 85.5267C121.291 83.6509 125.602 82.7164 130.397 82.7164C138.936 82.7164 145.759 85.4851 150.852 91.0225Z" fill="#E2E2E2"/>
+                    <path d="M103.168 205.211H102.718C46.4818 205.211 0.728516 159.444 0.728516 103.191V102.741C0.728516 46.4881 46.4818 0.721313 102.718 0.721313H103.168C159.405 0.721313 205.158 46.4881 205.158 102.741V103.191C205.158 159.444 159.405 205.211 103.168 205.211ZM102.718 7.64307C50.2946 7.64307 7.64824 50.302 7.64824 102.741V103.191C7.64824 155.63 50.2946 198.289 102.718 198.289H103.168C155.592 198.289 198.238 155.63 198.238 103.191V102.741C198.238 50.302 155.592 7.64307 103.168 7.64307H102.718Z" fill="#383D38"/>
+                    <path d="M51.291 69.849C48.6892 67.4333 47.3953 64.4431 47.3953 60.8853C47.3953 57.3276 48.6962 54.2057 51.291 51.7831C53.8929 49.3674 57.242 48.1561 61.3454 48.1561C65.4488 48.1561 68.6665 49.3674 71.2614 51.7831C73.8633 54.1988 75.1572 57.2376 75.1572 60.8853C75.1572 64.5331 73.8563 67.4333 71.2614 69.849C68.6596 72.2647 65.3589 73.476 61.3454 73.476C57.332 73.476 53.8929 72.2647 51.291 69.849ZM72.9706 83.7064V157.769H49.575V83.7064H72.9706Z" fill="#383D38"/>
+                    <path d="M150.852 91.0225C155.952 96.56 158.498 104.16 158.498 113.837V156.461H136.279V116.841C136.279 111.961 135.013 108.168 132.487 105.468C129.962 102.769 126.557 101.412 122.294 101.412C118.032 101.412 114.627 102.762 112.102 105.468C109.576 108.168 108.31 111.961 108.31 116.841V156.461H85.959V83.4987H108.31V93.1753C110.572 89.9497 113.624 87.4025 117.458 85.5267C121.291 83.6509 125.602 82.7164 130.397 82.7164C138.936 82.7164 145.759 85.4851 150.852 91.0225Z" fill="#383D38"/>
                 </svg>
             </a>
         </div>

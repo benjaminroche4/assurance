@@ -28,6 +28,12 @@ p > a {
     font-family: Barlow,sans-serif;
 }
 
+@media (max-width: 1060px) {
+    #nav-support {
+        display: none;
+    }
+}
+
 @media (max-width: 330px) {
     #phone-header {
         display: none;

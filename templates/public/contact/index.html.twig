@@ -3,9 +3,9 @@
 {% block title %}{% endblock %}
 
 {% block body %}
-    <section class="bg-white py-24 lg:py-32 mt-5 lg:mt-10">
+    <section class="bg-white py-14 lg:py-20">
         <div class="mx-auto max-w-7xl px-6 lg:px-8 grid lg:grid-cols-2 lg:gap-16">
-            <div class="max-w-2xl mx-auto lg:mx-0 mt-10 lg:mt-0">
+            <div class="max-w-2xl mx-auto lg:mx-0">
                 {% for message in app.flashes('success') %}
                     <div class="rounded-xl bg-green-50 p-4 mb-8">
                         <div class="flex items-center">
@@ -114,7 +114,7 @@
                 </div>
             </div>
             <div class="max-w-2xl mx-auto lg:mx-0 hidden lg:block">
-                <img class="h-full object-cover" src="{{ asset('media/website/ag-contact.jpg') }}" alt=""/>
+                <img class="h-full object-cover rounded-3xl" src="{{ asset('media/website/ag-contact.jpg') }}" alt=""/>
             </div>
         </div>
     </section>

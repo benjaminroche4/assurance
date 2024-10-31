@@ -11,16 +11,16 @@
     {% set isWeekday = day >= 1 and day <= 5 %}
     {% set isWithinTime = (hour > 9 or (hour == 9 and minutes >= 0)) and (hour < 19 or (hour == 19 and minutes <= 30)) %}
 
-    <section class="bg-white py-24 sm:py-32 mt-5 lg:mt-10">
+    <section class="bg-white py-14 lg:py-20">
         <div class="mx-auto max-w-2xl lg:max-w-7xl px-6 lg:px-8">
             <div class="mx-auto max-w-2xl lg:mx-0">
                 <p class="text-sm font-semibold leading-7 text-primary uppercase tracking-wide">Support</p>
                 <h1 class="mt-2 text-5xl font-bold tracking-tight text-gray-900 sm:text-6xl">Sinistre & Assistance</h1>
                 <p class="mt-6 text-lg leading-8 text-gray-600">En cas de sinistre ou d'assistance immédiate, contactez-nous directement durant les heures d'overture de l'agence.</p>
             </div>
-            <div class="mx-auto mt-16 max-w-2xl sm:mt-20 lg:max-w-none">
+            <div class="mx-auto mt-12 lg:mt-16 max-w-2xl lg:max-w-none">
                 <dl class="grid grid-cols-1 gap-11 lg:max-w-none lg:grid-cols-3">
-                    <div class="flex flex-col bg-gray-50 border border-gray-100 p-8">
+                    <div class="flex flex-col bg-gray-50 border rounded-2xl border-gray-100 p-8">
                         <div class="flex justify-between items-center">
                             <dt class="flex font-primary items-center gap-x-3 text-base font-semibold leading-7 text-gray-900">
                                 <svg class="h-5 w-5 flex-none text-primary" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon">
@@ -41,7 +41,7 @@
                             <p class="text-xs">Appel Gratuit | Lun-Vend 09/19h30</p>
                         </dd>
                     </div>
-                    <div class="flex flex-col bg-gray-50 border border-gray-100 p-8">
+                    <div class="flex flex-col bg-gray-50 border rounded-2xl border-gray-100 p-8">
                         <div class="flex justify-between items-center">
                             <dt class="flex font-primary items-center gap-x-3 text-base font-semibold leading-7 text-gray-900">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="h-5 w-5 flex-none text-primary" >
@@ -63,7 +63,7 @@
                             </p>
                         </dd>
                     </div>
-                    <div class="flex flex-col bg-gray-50 border border-gray-100 p-8">
+                    <div class="flex flex-col bg-gray-50 border rounded-2xl border-gray-100 p-8">
                         <div class="flex justify-between items-center">
                             <dt class="flex font-primary items-center gap-x-3 text-base font-semibold leading-7 text-gray-900">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="h-5 w-5 flex-none text-primary" >
