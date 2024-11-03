@@ -15,10 +15,10 @@
         <div class="mx-auto max-w-2xl lg:max-w-7xl px-6 lg:px-8">
             <div class="mx-auto max-w-2xl lg:mx-0">
                 <p class="text-sm font-semibold leading-7 text-primary uppercase tracking-wide">Rappelez-moi</p>
-                <h1 class="mt-2 text-5xl font-bold tracking-tight text-gray-900 sm:text-6xl">On vous rappelle</h1>
+                <h1 class="mt-2 text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">On vous rappelle</h1>
                 <p class="mt-6 text-lg leading-8 text-gray-600">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration.</p>
             </div>
-            <div class="mt-12 lg:mt-16 max-w-full lg:flex lg:gap-x-11 items-stretch">
+            <div class="mt-12 lg:mt-16 max-w-full lg:flex lg:gap-x-11 items-center">
                 <div class="border border-gray-100 bg-gray-50 rounded-2xl p-8 flex-1">
                     {% for message in app.flashes('success') %}
                         <div class="rounded-xl bg-green-50 p-4 mb-8 border border-green-300">
@@ -34,22 +34,24 @@
                             </div>
                         </div>
                     {% endfor %}
-                    <div class="mt-5 flex items-center gap-x-4">
-                        <span class="relative flex h-3 w-3">
-                            <span class="relative inline-flex rounded-full h-3 w-3 {{ isWeekday and isWithinTime ? 'bg-green-600' : 'bg-red-600' }}"></span>
-                        </span>
-                        <p class="font-primary text-base font-semibold">
-                            {{ isWeekday and isWithinTime ? 'Ouvert actuellement' : 'Fermé actuellement' }}
-                            <span class="font-normal text-sm text-gray-600 ml-2 tracking-wide">(Rappel Gratuit | Lun-Vend 09/19h30)</span>
-                        </p>
+                    <div class="mt-5 flex lg:flex-row flex-col items-center gap-x-4">
+                        <div class="flex items-center gap-x-4">
+                            <span class="relative flex h-3 w-3">
+                                <span class="relative inline-flex rounded-full h-3 w-3 {{ isWeekday and isWithinTime ? 'bg-green-600' : 'bg-red-600' }}"></span>
+                            </span>
+                            <p class="font-primary text-base font-semibold">
+                                {{ isWeekday and isWithinTime ? 'Ouvert actuellement' : 'Fermé actuellement' }}
+                            </p>
+                        </div>
+                        <p class="font-normal text-sm text-gray-600 ml-2 tracking-wide">(Rappel Gratuit | Lun-Vend 09/19h30)</p>
                     </div>
-                    {{ form_start(form, {'attr': {'class':'mt-5 max-w-lg'}}) }}
-                    <div class="flex flex-col md:flex-row gap-x-4 space-y-2">
-                        <label class="sr-only">{{ form_label(form.phoneNumber, 'Numéro de téléphone') }}</label>
-                        {{ form_widget(form.phoneNumber, {'attr': {'class':'min-w-0 flex-auto rounded-md border-0 p-5 text-gray-900 text-lg ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-primary', 'placeholder':'Numéro de téléphone'}}) }}
-                        <button type="submit" class="flex-none rounded-md bg-primary p-5 text-base font-semibold text-white font-primary hover:bg-primary-light transition duration-100">Se faire rappeler</button>
-                    </div>
-                    <p class="mt-4 text-xs text-gray-500">Nous protégeons vos données. Consultez notre <a href="{{ path('app_personal_data') }}" class="font-semibold text-gray-400 hover:text-primary-light transition duration-100">politique de confidentialité</a>.</p>
+                    {{ form_start(form, {'attr': {'class':'mt-5'}}) }}
+                        <div class="flex flex-col md:flex-row gap-x-4 space-y-3">
+                            <label class="sr-only">{{ form_label(form.phoneNumber, 'Numéro de téléphone') }}</label>
+                            {{ form_widget(form.phoneNumber, {'attr': {'class':'min-w-0 flex-auto rounded-md border-0 p-5 text-gray-900 text-lg ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-primary', 'placeholder':'Numéro de téléphone'}}) }}
+                            <button type="submit" class="flex-none rounded-md bg-primary p-5 text-base font-semibold text-white font-primary hover:bg-primary-light transition duration-100">Se faire rappeler</button>
+                        </div>
+                        <p class="mt-4 text-xs text-gray-500">Nous protégeons vos données. Consultez notre <a href="{{ path('app_personal_data') }}" class="font-semibold text-gray-400 hover:text-primary-light transition duration-100">politique de confidentialité</a>.</p>
                     {{ form_end(form) }}
                 </div>
                 <div class="hidden lg:block flex-1">
