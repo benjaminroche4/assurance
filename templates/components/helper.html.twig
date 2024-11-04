@@ -1,17 +1,20 @@
-<section class="bg-white px-6">
-    <div class="relative px-6 py-24 sm:px-6 sm:py-32 lg:px-8 max-w-2xl lg:max-w-7xl bg-primary mx-auto my-6 rounded-3xl bg-cover bg-center bg-no-repeat" style="background-image: url({{ asset('media/website/ag-contact.jpg') }});">
-        <div class="absolute inset-0 bg-gray-900 opacity-80 rounded-3xl"></div>
-        <div class="relative mx-auto max-w-2xl text-center">
-            <h2 class="text-balance text-3xl font-semibold tracking-tight text-white sm:text-5xl">Une question ? Nos conseillers sont là pour vous</h2>
-            <p class="mx-auto mt-6 max-w-xl text-pretty text-lg/8 text-gray-200">Incididunt sint fugiat pariatur cupidatat consectetur sit cillum anim id veniam aliqua proident excepteur commodo do ea.</p>
-            <div class="mt-10 flex items-center justify-center gap-x-6">
-                <a href="#" class="flex items-center gap-x-2 bg-white px-3.5 py-3 text-sm font-semibold text-gray-900 hover:bg-gray-200 transition duration-100 rounded-full">
+<section class="py-14 lg:py-20">
+    <div class="mx-auto max-w-2xl lg:max-w-6xl px-6 lg:px-8 grid lg:grid-cols-3 items-center gap-x-6 mb-12 gap-y-6 bg-gray-50 border border-gray-100 rounded-3xl p-8">
+        <div class="mx-auto max-w-2xl lg:mx-0 lg:col-span-2">
+            <p class="text-sm font-semibold leading-7 text-primary uppercase tracking-wide">Une question ?</p>
+            <h1 class="mt-2 text-4xl font-bold text-balance tracking-tight text-gray-900 sm:text-5xl">Nos conseillers sont là pour vous</h1>
+            <p class="mt-6 text-lg leading-8 font-medium text-gray-600">Une question sur un devis ou sur un contrat ? Vous pouvez demander à être rappelé par un conseiller ou directement prendre RDV en agence.</p>
+            <div class="mt-10">
+                <a href="{{ path('app_booking') }}" class="inline-flex justify-center items-center gap-x-2 text-sm font-semibold leading-6 text-white bg-primary px-3.5 py-3 sm:py-4 rounded-full transition duration-100 hover:bg-primary-light w-full sm:w-auto">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-4">
                         <path fill-rule="evenodd" d="M1.5 4.5a3 3 0 0 1 3-3h1.372c.86 0 1.61.586 1.819 1.42l1.105 4.423a1.875 1.875 0 0 1-.694 1.955l-1.293.97c-.135.101-.164.249-.126.352a11.285 11.285 0 0 0 6.697 6.697c.103.038.25.009.352-.126l.97-1.293a1.875 1.875 0 0 1 1.955-.694l4.423 1.105c.834.209 1.42.959 1.42 1.82V19.5a3 3 0 0 1-3 3h-2.25C8.552 22.5 1.5 15.448 1.5 6.75V4.5Z" clip-rule="evenodd" />
                     </svg>
-                    On vous rapelle
+                    Se faire rappeler
                 </a>
             </div>
+        </div>
+        <div>
+            <img src="{{ asset('media/website/loic_niclasse_assurance_genevoise.webp') }}" alt="" class="col-end-1 rounded-3xl block h-[25rem] w-full object-cover">
         </div>
     </div>
 </section>

@@ -1,6 +1,6 @@
 <header class="z-50 bg-white" x-data="{ open: false }">
     <p class="h-10 items-center justify-center bg-primary px-4 text-sm font-medium text-white sm:px-6 lg:px-8 hidden md:flex">Frais de courtage offert pour tout nouveau client. Decouvrir notre dernier article.</p>
-    <nav class="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8 border-b border-b-gray-200" aria-label="Global">
+    <nav class="mx-auto flex max-w-7xl items-center justify-between px-6 py-3 sm:p-6 lg:px-8 border-b border-b-gray-200" aria-label="Global">
         <div class="flex lg:flex-1 gap-10">
             <a href="{{ path('app_home') }}" class="-m-1.5 p-1.5">
                 <span class="sr-only">Assurance Genevoise</span>
@@ -241,45 +241,45 @@
                                 </svg>
                             </button>
                             <div class="mt-2 space-y-2" id="disclosure-1" x-show="open">
-                                <div class="block rounded-lg py-2 pl-6 pr-3 hover:bg-gray-50 items-center">
-                                    <div class="flex gap-x-3 items-center">
-                                        <div class="flex h-8 w-8 items-center justify-center rounded-lg bg-gray-50">
-                                            <svg class="h-5 w-5 text-primary" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
+                                <div class="group block rounded-lg py-2 pl-6 pr-3 hover:bg-gray-50 items-center transition duration-100">
+                                    <a href="{{ path('app_pro_offer_company') }}" class="flex gap-x-3 items-center">
+                                        <div class="flex h-8 w-8 items-center justify-center rounded-lg bg-gray-50 group-hover:bg-primary">
+                                            <svg class="h-5 w-5 text-gray-600 group-hover:text-white" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
                                                 <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 21h19.5m-18-18v18m10.5-18v18m6-13.5V21M6.75 6.75h.75m-.75 3h.75m-.75 3h.75m3-6h.75m-.75 3h.75m-.75 3h.75M6.75 21v-3.375c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21M3 3h12m-.75 4.5H21m-3.75 3.75h.008v.008h-.008v-.008Zm0 3h.008v.008h-.008v-.008Zm0 3h.008v.008h-.008v-.008Z" />
                                             </svg>
                                         </div>
-                                        <a href="{{ path('app_pro_offer_company') }}" class="text-sm/7 font-semibold text-gray-900">Entreprise</a>
-                                    </div>
+                                        <p class="text-sm/7 font-semibold text-gray-900">Entreprise</p>
+                                    </a>
                                 </div>
-                                <div class="block rounded-lg py-2 pl-6 pr-3 hover:bg-gray-50 items-center">
-                                    <div class="flex gap-x-3 items-center">
-                                        <div class="flex h-8 w-8 items-center justify-center rounded-lg bg-gray-50">
-                                            <svg class="h-5 w-5 text-primary" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
+                                <div class="group block rounded-lg py-2 pl-6 pr-3 hover:bg-gray-50 items-center transition duration-100">
+                                    <a href="{{ path('app_pro_offer_border') }}" class="flex gap-x-3 items-center">
+                                        <div class="flex h-8 w-8 items-center justify-center rounded-lg bg-gray-50 group-hover:bg-primary">
+                                            <svg class="h-5 w-5 text-gray-600 group-hover:text-white" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
                                                 <path stroke-linecap="round" stroke-linejoin="round" d="M9 6.75V15m6-6v8.25m.503 3.498 4.875-2.437c.381-.19.622-.58.622-1.006V4.82c0-.836-.88-1.38-1.628-1.006l-3.869 1.934c-.317.159-.69.159-1.006 0L9.503 3.252a1.125 1.125 0 0 0-1.006 0L3.622 5.689C3.24 5.88 3 6.27 3 6.695V19.18c0 .836.88 1.38 1.628 1.006l3.869-1.934c.317-.159.69-.159 1.006 0l4.994 2.497c.317.158.69.158 1.006 0Z" />
                                             </svg>
                                         </div>
-                                        <a href="{{ path('app_pro_offer_border') }}" class="text-sm/7 font-semibold text-gray-900">Frontalier</a>
-                                    </div>
+                                        <p class="text-sm/7 font-semibold text-gray-900">Frontalier</p>
+                                    </a>
                                 </div>
-                                <div class="block rounded-lg py-2 pl-6 pr-3 hover:bg-gray-50 items-center">
-                                    <div class="flex gap-x-3 items-center">
-                                        <div class="flex h-8 w-8 items-center justify-center rounded-lg bg-gray-50">
-                                            <svg class="h-5 w-5 text-primary" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
+                                <div class="group block rounded-lg py-2 pl-6 pr-3 hover:bg-gray-50 items-center transition duration-100">
+                                    <a href="{{ path('app_pro_offer_international') }}" class="flex gap-x-3 items-center">
+                                        <div class="flex h-8 w-8 items-center justify-center rounded-lg bg-gray-50 group-hover:bg-primary">
+                                            <svg class="h-5 w-5 text-gray-600 group-hover:text-white" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
                                                 <path stroke-linecap="round" stroke-linejoin="round" d="m20.893 13.393-1.135-1.135a2.252 2.252 0 0 1-.421-.585l-1.08-2.16a.414.414 0 0 0-.663-.107.827.827 0 0 1-.812.21l-1.273-.363a.89.89 0 0 0-.738 1.595l.587.39c.59.395.674 1.23.172 1.732l-.2.2c-.212.212-.33.498-.33.796v.41c0 .409-.11.809-.32 1.158l-1.315 2.191a2.11 2.11 0 0 1-1.81 1.025 1.055 1.055 0 0 1-1.055-1.055v-1.172c0-.92-.56-1.747-1.414-2.089l-.655-.261a2.25 2.25 0 0 1-1.383-2.46l.007-.042a2.25 2.25 0 0 1 .29-.787l.09-.15a2.25 2.25 0 0 1 2.37-1.048l1.178.236a1.125 1.125 0 0 0 1.302-.795l.208-.73a1.125 1.125 0 0 0-.578-1.315l-.665-.332-.091.091a2.25 2.25 0 0 1-1.591.659h-.18c-.249 0-.487.1-.662.274a.931.931 0 0 1-1.458-1.137l1.411-2.353a2.25 2.25 0 0 0 .286-.76m11.928 9.869A9 9 0 0 0 8.965 3.525m11.928 9.868A9 9 0 1 1 8.965 3.525" />
                                             </svg>
                                         </div>
-                                        <a href="{{ path('app_pro_offer_international') }}" class="text-sm/7 font-semibold text-gray-900">International</a>
-                                    </div>
+                                        <p class="text-sm/7 font-semibold text-gray-900">International</p>
+                                    </a>
                                 </div>
-                                <div class="block rounded-lg py-2 pl-6 pr-3 hover:bg-gray-50 items-center">
-                                    <div class="flex gap-x-3 items-center">
-                                        <div class="flex h-8 w-8 items-center justify-center rounded-lg bg-gray-50">
-                                            <svg class="h-5 w-5 text-primary" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
+                                <div class="group block rounded-lg py-2 pl-6 pr-3 hover:bg-gray-50 items-center transition duration-100">
+                                    <a href="{{ path('app_pro_offer_liberal_profession') }}"  class="flex gap-x-3 items-center">
+                                        <div class="flex h-8 w-8 items-center justify-center rounded-lg bg-gray-50 group-hover:bg-primary">
+                                            <svg class="h-5 w-5 text-gray-600 group-hover:text-white"  fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
                                                 <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v17.25m0 0c-1.472 0-2.882.265-4.185.75M12 20.25c1.472 0 2.882.265 4.185.75M18.75 4.97A48.416 48.416 0 0 0 12 4.5c-2.291 0-4.545.16-6.75.47m13.5 0c1.01.143 2.01.317 3 .52m-3-.52 2.62 10.726c.122.499-.106 1.028-.589 1.202a5.988 5.988 0 0 1-2.031.352 5.988 5.988 0 0 1-2.031-.352c-.483-.174-.711-.703-.59-1.202L18.75 4.971Zm-16.5.52c.99-.203 1.99-.377 3-.52m0 0 2.62 10.726c.122.499-.106 1.028-.589 1.202a5.989 5.989 0 0 1-2.031.352 5.989 5.989 0 0 1-2.031-.352c-.483-.174-.711-.703-.59-1.202L5.25 4.971Z" />
                                             </svg>
                                         </div>
-                                        <a href="{{ path('app_pro_offer_liberal_profession') }}" class="text-sm/7 font-semibold text-gray-900">Profession libérale</a>
-                                    </div>
+                                        <p class="text-sm/7 font-semibold text-gray-900">Profession libérale</p>
+                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -291,55 +291,55 @@
                                 </svg>
                             </button>
                             <div class="mt-2 space-y-2" id="disclosure-1" x-show="open">
-                                <div class="block rounded-lg py-2 pl-6 pr-3 hover:bg-gray-50 items-center">
-                                    <div class="flex gap-x-3 items-center">
-                                        <div class="flex h-8 w-8 items-center justify-center rounded-lg bg-gray-50">
-                                            <svg class="h-5 w-5 text-primary" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
+                                <div class="group block rounded-lg py-2 pl-6 pr-3 hover:bg-gray-50 items-center transition duration-100">
+                                    <a href="{{ path('app_individual_insurance') }}" class="flex gap-x-3 items-center">
+                                        <div class="flex h-8 w-8 items-center justify-center rounded-lg bg-gray-50 group-hover:bg-primary">
+                                            <svg class="h-5 w-5 text-gray-600 group-hover:text-white" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
                                                 <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75m-3-7.036A11.959 11.959 0 0 1 3.598 6 11.99 11.99 0 0 0 3 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285Z" />
                                             </svg>
                                         </div>
-                                        <a href="{{ path('app_individual_insurance') }}" class="text-sm/7 font-semibold text-gray-900">Assurance</a>
-                                    </div>
+                                        <p class="text-sm/7 font-semibold text-gray-900">Assurance</p>
+                                    </a>
                                 </div>
-                                <div class="block rounded-lg py-2 pl-6 pr-3 hover:bg-gray-50 items-center">
-                                    <div class="flex gap-x-3 items-center">
-                                        <div class="flex h-8 w-8 items-center justify-center rounded-lg bg-gray-50">
-                                            <svg class="h-5 w-5 text-primary" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
+                                <div class="group block rounded-lg py-2 pl-6 pr-3 hover:bg-gray-50 items-center transition duration-100">
+                                    <a href="{{ path('app_individual_taxation') }}"  class="flex gap-x-3 items-center">
+                                        <div class="flex h-8 w-8 items-center justify-center rounded-lg bg-gray-50 group-hover:bg-primary">
+                                            <svg class="h-5 w-5 text-gray-600 group-hover:text-white" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
                                                 <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 18.75a60.07 60.07 0 0 1 15.797 2.101c.727.198 1.453-.342 1.453-1.096V18.75M3.75 4.5v.75A.75.75 0 0 1 3 6h-.75m0 0v-.375c0-.621.504-1.125 1.125-1.125H20.25M2.25 6v9m18-10.5v.75c0 .414.336.75.75.75h.75m-1.5-1.5h.375c.621 0 1.125.504 1.125 1.125v9.75c0 .621-.504 1.125-1.125 1.125h-.375m1.5-1.5H21a.75.75 0 0 0-.75.75v.75m0 0H3.75m0 0h-.375a1.125 1.125 0 0 1-1.125-1.125V15m1.5 1.5v-.75A.75.75 0 0 0 3 15h-.75M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Zm3 0h.008v.008H18V10.5Zm-12 0h.008v.008H6V10.5Z" />
                                             </svg>
                                         </div>
-                                        <a href="{{ path('app_individual_taxation') }}" class="text-sm/7 font-semibold text-gray-900">Fiscalité</a>
-                                    </div>
+                                        <p class="text-sm/7 font-semibold text-gray-900">Fiscalité</p>
+                                    </a>
                                 </div>
-                                <div class="block rounded-lg py-2 pl-6 pr-3 hover:bg-gray-50 items-center">
-                                    <div class="flex gap-x-3 items-center">
-                                        <div class="flex h-8 w-8 items-center justify-center rounded-lg bg-gray-50">
-                                            <svg class="h-5 w-5 text-primary" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
+                                <div class="group block rounded-lg py-2 pl-6 pr-3 hover:bg-gray-50 items-center transition duration-100">
+                                    <a href="{{ path('app_individual_health') }}" class="flex gap-x-3 items-center">
+                                        <div class="flex h-8 w-8 items-center justify-center rounded-lg bg-gray-50 group-hover:bg-primary">
+                                            <svg class="h-5 w-5 text-gray-600 group-hover:text-white"  fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
                                                 <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
                                             </svg>
                                         </div>
-                                        <a href="{{ path('app_individual_health') }}" class="text-sm/7 font-semibold text-gray-900">Santé</a>
-                                    </div>
+                                        <p class="text-sm/7 font-semibold text-gray-900">Santé</p>
+                                    </a>
                                 </div>
-                                <div class="block rounded-lg py-2 pl-6 pr-3 hover:bg-gray-50 items-center">
-                                    <div class="flex gap-x-3 items-center">
-                                        <div class="flex h-8 w-8 items-center justify-center rounded-lg bg-gray-50">
-                                            <svg class="h-5 w-5 text-primary" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
+                                <div class="group block rounded-lg py-2 pl-6 pr-3 hover:bg-gray-50 items-center transition duration-100">
+                                    <a href="{{ path('app_individual_mortgage') }}" class="flex gap-x-3 items-center">
+                                        <div class="flex h-8 w-8 items-center justify-center rounded-lg bg-gray-50 group-hover:bg-primary">
+                                            <svg class="h-5 w-5 text-gray-600 group-hover:text-white"  fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
                                                 <path stroke-linecap="round" stroke-linejoin="round" d="m2.25 12 8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
                                             </svg>
                                         </div>
-                                        <a href="{{ path('app_individual_mortgage') }}" class="text-sm/7 font-semibold text-gray-900">Hypothéque</a>
-                                    </div>
+                                        <p class="text-sm/7 font-semibold text-gray-900">Hypothéque</p>
+                                    </a>
                                 </div>
-                                <div class="block rounded-lg py-2 pl-6 pr-3 hover:bg-gray-50 items-center">
-                                    <div class="flex gap-x-3 items-center">
-                                        <div class="flex h-8 w-8 items-center justify-center rounded-lg bg-gray-50">
-                                            <svg class="h-5 w-5 text-primary" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
+                                <div class="group block rounded-lg py-2 pl-6 pr-3 hover:bg-gray-50 items-center transition duration-100">
+                                    <a href="{{ path('app_individual_health_insurance') }}"  class="flex gap-x-3 items-center">
+                                        <div class="flex h-8 w-8 items-center justify-center rounded-lg bg-gray-50 group-hover:bg-primary">
+                                            <svg class="h-5 w-5 text-gray-600 group-hover:text-white"  fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
                                                 <path stroke-linecap="round" stroke-linejoin="round" d="M16.712 4.33a9.027 9.027 0 0 1 1.652 1.306c.51.51.944 1.064 1.306 1.652M16.712 4.33l-3.448 4.138m3.448-4.138a9.014 9.014 0 0 0-9.424 0M19.67 7.288l-4.138 3.448m4.138-3.448a9.014 9.014 0 0 1 0 9.424m-4.138-5.976a3.736 3.736 0 0 0-.88-1.388 3.737 3.737 0 0 0-1.388-.88m2.268 2.268a3.765 3.765 0 0 1 0 2.528m-2.268-4.796a3.765 3.765 0 0 0-2.528 0m4.796 4.796c-.181.506-.475.982-.88 1.388a3.736 3.736 0 0 1-1.388.88m2.268-2.268 4.138 3.448m0 0a9.027 9.027 0 0 1-1.306 1.652c-.51.51-1.064.944-1.652 1.306m0 0-3.448-4.138m3.448 4.138a9.014 9.014 0 0 1-9.424 0m5.976-4.138a3.765 3.765 0 0 1-2.528 0m0 0a3.736 3.736 0 0 1-1.388-.88 3.737 3.737 0 0 1-.88-1.388m2.268 2.268L7.288 19.67m0 0a9.024 9.024 0 0 1-1.652-1.306 9.027 9.027 0 0 1-1.306-1.652m0 0 4.138-3.448M4.33 16.712a9.014 9.014 0 0 1 0-9.424m4.138 5.976a3.765 3.765 0 0 1 0-2.528m0 0c.181-.506.475-.982.88-1.388a3.736 3.736 0 0 1 1.388-.88m-2.268 2.268L4.33 7.288m6.406 1.18L7.288 4.33m0 0a9.024 9.024 0 0 0-1.652 1.306A9.025 9.025 0 0 0 4.33 7.288" />
                                             </svg>
                                         </div>
-                                        <a href="{{ path('app_individual_health_insurance') }}" class="text-sm/7 font-semibold text-gray-900">Prévoyance</a>
-                                    </div>
+                                        <p class="text-sm/7 font-semibold text-gray-900">Prévoyance</p>
+                                    </a>
                                 </div>
                             </div>
                         </div>

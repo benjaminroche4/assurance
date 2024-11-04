@@ -49,4 +49,20 @@ class BlogPostRepository extends ServiceEntityRepository
             ->getQuery()
             ->getResult();
     }
+
+    /**
+     * Find the last posts.
+     *
+     * @param int $limit
+     * @return array<BlogPost>
+     */
+    public function findLastPosts(int $limit = 3): array
+    {
+        return $this->createQueryBuilder('p')
+            ->andWhere('p.status = true')
+            ->orderBy('p.createdAt', 'DESC')
+            ->setMaxResults($limit)
+            ->getQuery()
+            ->getResult();
+    }
 }
