@@ -9,13 +9,14 @@ use Symfony\Component\EventDispatcher\Attribute\AsEventListener;
 use Symfony\Component\Routing\Generator\UrlGeneratorInterface;
 
 /**
- * Event listener of the Sitemap bundle. This class is used to populate the sitemap with the blog posts.
+ * Event listener of the Sitemap bundle.
+ * This class is used to populate the sitemap with the blog posts.
  */
 #[AsEventListener(event: SitemapPopulateEvent::class, method: 'onSitemapPopulate')]
-class SiteMapEventListener
+readonly class SiteMapEventListener
 {
     public function __construct(
-        readonly BlogPostRepository $blogPostRepository
+        public BlogPostRepository $blogPostRepository
     )
     {
     }
