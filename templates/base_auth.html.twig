@@ -2,10 +2,45 @@
 <html lang="fr" class="h-full bg-white">
     <head>
         <meta charset="UTF-8">
+        <title>{% block title %}{% endblock %} | Assurance Genevoise</title>
+        <meta name="description" content="{% block description %}{% endblock %}">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <title>{% block title %}{% endblock %}</title>
-        <link rel="icon" href="{{ asset('media/logo/favicon.ico') }}" />
+        {% block stylesheets %}
+            {{ encore_entry_link_tags('app') }}
+        {% endblock %}
+        {% block javascripts %}
+            {{ encore_entry_script_tags('app') }}
+            {% block importmap %}{{ importmap('app') }}{% endblock %}
+        {% endblock %}
+
+        <link rel="icon" href="{{ asset('media/favicon.ico') }}" />
+        <link rel="apple-touch-icon" sizes="120x120" href="{{ asset('media/favicon/apple-touch-icon-120x120.png') }}">
+
+        <!-- Facebook Meta Tags -->
+        <meta property="og:title" content="{{ block('title') }}">
+        <meta property="og:url" content="assurance-genevoise.ch{{ block('url') }}">
+        <meta property="og:image" content="{{ asset('media/website/assurance-genevoise-banniere.webp') }}">
+        <meta property="og:type" content="website">
+        <meta property="og:site_name" content="assurance-genevoise.ch"/>
+        <meta property="og:language" content="fr"/>
+
+        <!-- Twitter Meta Tags -->
+        <meta name="twitter:title" content="{{ block('title') }}">
+        <meta property="twitter:url" content="assurance-genevoise.ch{{ block('url') }}">
+        <meta name="twitter:image" content="{{ asset('media/website/assurance-genevoise-banniere.webp') }}">
+        <meta property="twitter:domain" content="assurance-genevoise.ch">
+        <meta name="twitter:card" content="summary_large_image">
+
+        <!-- Schema.org -->
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "WebSite",
+                "name": "Assurance Genevoise",
+                "url": "https://assurance-genevoise.ch"
+            }
+        </script>
 
         <!-- Google tag (gtag.js) -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-WTHX58Q2Q2"></script>
@@ -14,15 +49,6 @@
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date()); gtag('config', 'G-WTHX58Q2Q2');
         </script>
-
-        {% block stylesheets %}
-            {{ encore_entry_link_tags('app') }}
-        {% endblock %}
-
-        {% block javascripts %}
-            {{ encore_entry_script_tags('app') }}
-            {% block importmap %}{{ importmap('app') }}{% endblock %}
-        {% endblock %}
     </head>
     <body class="h-full">
         {% block body %}{% endblock %}
