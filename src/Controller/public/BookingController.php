@@ -18,7 +18,7 @@ use Symfony\Component\Routing\Attribute\Route;
 
 class BookingController extends AbstractController
 {
-    #[Route('/rappelez-moi', name: 'app_booking')]
+    #[Route('/rappelez-moi', name: 'app_booking', options: ['sitemap' => ['priority' => 0.9]])]
     public function index(Request $request, EntityManagerInterface $entityManager, MailerInterface $mailer, LoggerInterface $logger): Response
     {
         $booking = new Booking();

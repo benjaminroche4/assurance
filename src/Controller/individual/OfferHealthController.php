@@ -8,7 +8,7 @@ use Symfony\Component\Routing\Attribute\Route;
 
 class OfferHealthController extends AbstractController
 {
-    #[Route('/particulier/sante', name: 'app_individual_health')]
+    #[Route('/particulier/sante', name: 'app_individual_health', options: ['sitemap' => ['priority' => 0.9]])]
     public function index(): Response
     {
         return $this->render('individual/offer_health/index.html.twig');

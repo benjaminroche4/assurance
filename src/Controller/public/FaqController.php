@@ -8,7 +8,7 @@ use Symfony\Component\Routing\Attribute\Route;
 
 class FaqController extends AbstractController
 {
-    #[Route('/faq', name: 'app_faq')]
+    #[Route('/faq', name: 'app_faq', options: ['sitemap' => ['priority' => 0.9]])]
     public function index(): Response
     {
         return $this->render('public/faq/index.html.twig');
