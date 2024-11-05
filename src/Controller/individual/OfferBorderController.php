@@ -8,25 +8,25 @@ use Symfony\Component\Routing\Attribute\Route;
 
 class OfferBorderController extends AbstractController
 {
-    #[Route('/particulier/frontalier', name: 'app_individual_offer_border')]
+    #[Route('/particulier/frontalier', name: 'app_individual_offer_border', options: ['sitemap' => ['priority' => 0.9]])]
     public function index(): Response
     {
         return $this->render('individual/offer_border/index.html.twig');
     }
 
-    #[Route('/particulier/frontalier/prevoyance', name: 'app_individual_offer_border_health_insurance')]
+    #[Route('/particulier/frontalier/prevoyance', name: 'app_individual_offer_border_health_insurance', options: ['sitemap' => ['priority' => 0.8]])]
     public function healthInsurance(): Response
     {
         return $this->render('individual/offer_border/health_insurance.html.twig');
     }
 
-    #[Route('/particulier/frontalier/sante', name: 'app_individual_offer_border_health')]
+    #[Route('/particulier/frontalier/sante', name: 'app_individual_offer_border_health', options: ['sitemap' => ['priority' => 0.8]])]
     public function health(): Response
     {
         return $this->render('individual/offer_border/health.html.twig');
     }
 
-    #[Route('/particulier/frontalier/taux-de-change', name: 'app_individual_offer_border_exchange_rate')]
+    #[Route('/particulier/frontalier/taux-de-change', name: 'app_individual_offer_border_exchange_rate', options: ['sitemap' => ['priority' => 0.8]])]
     public function exchangeRate(): Response
     {
         return $this->render('individual/offer_border/exchange_rate.html.twig');

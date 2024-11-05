@@ -3,6 +3,7 @@
 namespace App\Controller\public;
 
 use App\Repository\BlogPostRepository;
+use Presta\SitemapBundle\Sitemap\Url\UrlConcrete;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Attribute\Route;
@@ -14,7 +15,7 @@ class BlogController extends AbstractController
     ){
     }
 
-    #[Route('/blog', name: 'app_blog_list')]
+    #[Route('/blog', name: 'app_blog_list', options: ['sitemap' => ['priority' => 0.8, 'section' => 'blog', 'changefreq' => UrlConcrete::CHANGEFREQ_WEEKLY]])]
     public function blogList(): Response
     {
         $posts = $this->blogPostRepository->findAllPublished();
