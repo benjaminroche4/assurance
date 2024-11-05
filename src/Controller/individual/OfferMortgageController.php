@@ -6,11 +6,11 @@ use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Attribute\Route;
 
-class TaxationController extends AbstractController
+class OfferMortgageController extends AbstractController
 {
-    #[Route('/particulier/fiscalite', name: 'app_individual_taxation')]
+    #[Route('/particulier/hypotheque', name: 'app_individual_mortgage')]
     public function index(): Response
     {
-        return $this->render('individual/taxation/index.html.twig');
+        return $this->render('individual/offer_mortgage/index.html.twig');
     }
 }

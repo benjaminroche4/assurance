@@ -9,7 +9,7 @@
     {% set minutes = now|date('i') %}
 
     {% set isWeekday = day >= 1 and day <= 5 %}
-    {% set isWithinTime = (hour > 9 or (hour == 9 and minutes >= 0)) and (hour < 19 or (hour == 19 and minutes <= 30)) %}
+    {% set isWithinTime = (hour > 9 or (hour == 9 and minutes >= 0)) and (hour < 18 or (hour == 18 and minutes == 0)) %}
 
     <section class="bg-white py-14 lg:py-20">
         <div class="mx-auto max-w-7xl px-6 lg:px-8 grid lg:grid-cols-2 lg:gap-16">

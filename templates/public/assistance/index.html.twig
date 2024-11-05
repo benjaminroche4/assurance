@@ -9,7 +9,7 @@
     {% set minutes = now|date('i') %}
 
     {% set isWeekday = day >= 1 and day <= 5 %}
-    {% set isWithinTime = (hour > 9 or (hour == 9 and minutes >= 0)) and (hour < 19 or (hour == 19 and minutes <= 30)) %}
+    {% set isWithinTime = (hour > 9 or (hour == 9 and minutes >= 0)) and (hour < 18 or (hour == 18 and minutes == 0)) %}
 
     <section class="bg-white py-14 lg:py-20">
         <div class="mx-auto max-w-2xl lg:max-w-7xl px-6 lg:px-8">
@@ -39,7 +39,7 @@
                             <p class="mt-6">
                                 <a href="#" class="text-base font-primary font-semibold leading-6 text-primary">+220 415 452 02</a>
                             </p>
-                            <p class="text-xs">Appel Gratuit | Lun-Vend 09/19h30</p>
+                            <p class="text-xs">Appel Gratuit | Lun-Vend 09/18h</p>
                         </dd>
                     </div>
                     <div class="flex flex-col bg-gray-50 border rounded-2xl border-gray-100 p-8">

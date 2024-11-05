@@ -9,14 +9,14 @@
     {% set minutes = now|date('i') %}
 
     {% set isWeekday = day >= 1 and day <= 5 %}
-    {% set isWithinTime = (hour > 9 or (hour == 9 and minutes >= 0)) and (hour < 19 or (hour == 19 and minutes <= 30)) %}
+    {% set isWithinTime = (hour > 9 or (hour == 9 and minutes >= 0)) and (hour < 18 or (hour == 18 and minutes == 0)) %}
 
     <section class="bg-white py-14 lg:py-20">
         <div class="mx-auto max-w-2xl lg:max-w-7xl px-6 lg:px-8">
             <div class="mx-auto max-w-2xl lg:mx-0">
                 <p class="text-sm font-semibold leading-7 text-primary uppercase tracking-wide">Rappelez-moi</p>
                 <h1 class="mt-2 text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">On vous rappelle</h1>
-                <p class="mt-6 text-lg leading-8 text-gray-600">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration.</p>
+                <p class="mt-6 text-lg leading-8 text-gray-600">Nos conseillers vous rappellent pendant les heures d'ouverture pour vous guider et proposer des services adaptés.</p>
             </div>
             <div class="mt-12 lg:mt-16 max-w-full lg:flex lg:gap-x-11 items-center">
                 <div class="border border-gray-100 bg-gray-50 rounded-2xl p-8 flex-1">
@@ -43,7 +43,7 @@
                                 {{ isWeekday and isWithinTime ? 'Ouvert actuellement' : 'Fermé actuellement' }}
                             </p>
                         </div>
-                        <p class="font-normal text-sm text-gray-600 ml-2 tracking-wide">(Rappel Gratuit | Lun-Vend 09/19h30)</p>
+                        <p class="font-normal text-sm text-gray-600 ml-2 tracking-wide">(Rappel Gratuit | Lun-Vend 09/18h)</p>
                     </div>
                     {{ form_start(form, {'attr': {'class':'mt-5'}}) }}
                         <div class="flex flex-col md:flex-row gap-x-4 space-y-3">
