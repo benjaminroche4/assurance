@@ -58,8 +58,10 @@ class ContactType extends AbstractType
             ])
             ->add('subject', ChoiceType::class, [
                 'choices'  => [
-                    '1...' => '1...',
-                    '2...' => '2...',
+                    'Besoin de conseils personnalisés' => 'Besoin de conseils personnalisés',
+                    'Demander à être rappelé' => 'Demander à être rappelé',
+                    'Demande de rendez-vous' => 'Demande de rendez-vous',
+                    'Autres...' => 'Autres...',
                 ],
                 'placeholder' => '',
                 'constraints' => [

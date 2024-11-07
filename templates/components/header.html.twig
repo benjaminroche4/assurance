@@ -1,5 +1,14 @@
 <header class="z-50 bg-white" x-data="{ open: false }">
-    <p class="h-10 items-center justify-center bg-primary px-4 text-sm font-medium text-white sm:px-6 lg:px-8 hidden md:flex">Frais de courtage offert pour tout nouveau client. Decouvrir notre dernier article.</p>
+    <div class="bg-primary">
+        <div class="h-10 items-center max-w-7xl mx-auto justify-between px-4 text-sm font-medium text-white sm:px-6 lg:px-8 hidden md:flex rounded-b-md">
+            <div class="font-primary">
+                <p><a href="tel:222266" class="font-primary hover:text-gray-100 transition duration-100">+225 22 52 52 25</a> | <span class="font-secondary">Appel Gratuit  (Lun-Vend 09/18h)</span></p>
+            </div>
+            <div class="font-primary">
+                <a href="{{ path('app_blog_list') }}" class="hover:text-gray-100 transition duration-100">Nos articles</a> | <a href="{{ path('app_faq') }}" class="hover:text-gray-100 transition duration-100">FAQ</a>
+            </div>
+        </div>
+    </div>
     <nav class="mx-auto flex max-w-7xl items-center justify-between px-6 py-3 sm:p-6 lg:px-8 border-b border-b-gray-200" aria-label="Global">
         <div class="flex lg:flex-1 gap-10">
             <a href="{{ path('app_home') }}" class="-m-1.5 p-1.5">
@@ -56,7 +65,7 @@
                                             Profession libérale
                                             <span class="absolute inset-0"></span>
                                         </a>
-                                        <p class="mt-1 text-gray-600">Une couverture santé dédiée aux professions libérales</p>
+                                        <p class="mt-1 text-gray-600">Une couverture dédiée aux professions libérales</p>
                                     </div>
                                 </div>
                             </div>
@@ -92,7 +101,7 @@
                                             Assurance
                                             <span class="absolute inset-0"></span>
                                         </a>
-                                        <p class="mt-1 text-gray-600">Protégez ce qui compte avec une couverture sur mesure</p>
+                                        <p class="mt-1 text-gray-600">Des solutions de protection sur mesure</p>
                                     </div>
                                 </div>
                                 <div class="group relative flex gap-x-6 rounded-lg p-4 hover:bg-gray-50 transition duration-100">
