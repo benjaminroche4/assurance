@@ -18,7 +18,7 @@ use Symfony\Component\Routing\Attribute\Route;
 
 class ContactController extends AbstractController
 {
-    #[Route('/contact', name: 'app_contact', options: ['sitemap' => ['priority' => 0.9]])]
+    #[Route('/contact', name: 'app_contact', options: ['sitemap' => ['priority' => 0.8]])]
     public function index(Request $request, EntityManagerInterface $entityManager, MailerInterface $mailer, LoggerInterface $logger): Response
     {
         $contact = new Contact();

@@ -9,7 +9,7 @@ use Symfony\Component\Routing\Attribute\Route;
 
 class AssistanceController extends AbstractController
 {
-    #[Route('/assistance', name: 'app_assistance', options: ['sitemap' => ['priority' => 0.9]])]
+    #[Route('/assistance', name: 'app_assistance', options: ['sitemap' => ['priority' => 0.6]])]
     public function index(): Response
     {
         return $this->render('public/assistance/index.html.twig');

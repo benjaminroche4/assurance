@@ -9,7 +9,7 @@ use Symfony\Component\Security\Http\Authentication\AuthenticationUtils;
 
 class SecurityController extends AbstractController
 {
-    #[Route(path: '/connexion', name: 'app_login', options: ['sitemap' => ['priority' => 0.5]])]
+    #[Route(path: '/connexion', name: 'app_login', options: ['sitemap' => ['priority' => 0.3]])]
     public function login(AuthenticationUtils $authenticationUtils): Response
     {
         // get the login error if there is one
