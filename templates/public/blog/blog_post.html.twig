@@ -9,6 +9,7 @@
         <div class="mx-auto max-w-2xl lg:max-w-7xl px-6 lg:px-8">
             <div class="mx-auto lg:mx-0 grid grid-cols-1 lg:grid-cols-3 md:gap-x-12">
                 <div class="md:col-span-2">
+                    <img src="{{ asset('media/blog/'~post.mainPhoto) }}" alt="{{ post.altMainPhoto }}" class="object-cover w-full aspect-video rounded-3xl mb-10"/>
                     <p class="text-sm font-semibold leading-7 text-primary uppercase tracking-wide">Publiée le  <time datetime="{{ post.createdAt | date('d F Y') }}">{{ post.createdAt | date('d F Y') | format_date(locale='fr') }}</time></p>
                     <h1 class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-5xl text-pretty">{{ post.title }}</h1>
                     <div class="flex items-center gap-3 mt-7">
@@ -24,7 +25,7 @@
                     </div>
                 </div>
                 <aside class="hidden lg:block">
-                    <div class="bg-gray-50 border border-gray-100 p-8 lg:sticky rounded-2xl">
+                    <div class="bg-gray-50 border border-gray-100 p-8 lg:sticky lg:top-6 rounded-2xl">
                         <p class="font-semibold text-lg text-center font-primary">Vous avez un besoin ?</p>
                         <p class="text-center mt-2">Nous vous rappelons gratuitement pour répondre à vos questions.</p>
                         <div class="mx-auto w-full mt-5">
