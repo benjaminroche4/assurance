@@ -5,13 +5,53 @@
 {% block url %}{% endblock %}
 
 {% block body %}
+    <section class="relative z-40">
+        <div class="mx-auto max-w-7xl">
+            <div class="relative z-10 lg:w-full lg:max-w-2xl">
+                <svg class="absolute inset-y-0 right-8 hidden h-full w-80 translate-x-1/2 transform fill-white lg:block" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">
+                    <polygon points="0,0 90,0 50,100 0,100" />
+                </svg>
+                <div class="relative px-6 py-12 md:py-24 lg:py-32 lg:px-8 lg:pr-0 z-30">
+                    <div class="mx-auto max-w-2xl lg:mx-0 lg:max-w-xl">
+                        <h1 class="text-pretty text-4xl md:text-5xl font-bold tracking-tight text-gray-900 lg:text-6xl">Votre assureur de reference Suisse</h1>
+                        <p class="mt-8 text-pretty text-lg text-gray-600 sm:text-xl/8">Anim aute id magna aliqua ad ad non deserunt sunt. Qui cupidatat commodo. Elit sunt amet fugiat veniam occaecat fugiat aliqua.</p>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 items-start mt-10 space-y-5 sm:space-y-0">
+                            <div class="font-medium text-base font-primary tracking-wide items-center border-l border-gray-900/10 flex gap-x-2 pl-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="h-8 w-auto">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 0 1-1.043 3.296 3.745 3.745 0 0 1-3.296 1.043A3.745 3.745 0 0 1 12 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 0 1-3.296-1.043 3.745 3.745 0 0 1-1.043-3.296A3.745 3.745 0 0 1 3 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 0 1 1.043-3.296 3.746 3.746 0 0 1 3.296-1.043A3.746 3.746 0 0 1 12 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 0 1 3.296 1.043 3.746 3.746 0 0 1 1.043 3.296A3.745 3.745 0 0 1 21 12Z" />
+                                </svg>
+                                <p class="font-main text-center">Experts certifiés en Suisse</p>
+                            </div>
+                            <div class="font-medium text-base font-primary tracking-wide items-center border-l border-gray-900/10 flex gap-x-2 pl-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="h-8 w-auto">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M6.633 10.25c.806 0 1.533-.446 2.031-1.08a9.041 9.041 0 0 1 2.861-2.4c.723-.384 1.35-.956 1.653-1.715a4.498 4.498 0 0 0 .322-1.672V2.75a.75.75 0 0 1 .75-.75 2.25 2.25 0 0 1 2.25 2.25c0 1.152-.26 2.243-.723 3.218-.266.558.107 1.282.725 1.282m0 0h3.126c1.026 0 1.945.694 2.054 1.715.045.422.068.85.068 1.285a11.95 11.95 0 0 1-2.649 7.521c-.388.482-.987.729-1.605.729H13.48c-.483 0-.964-.078-1.423-.23l-3.114-1.04a4.501 4.501 0 0 0-1.423-.23H5.904m10.598-9.75H14.25M5.904 18.5c.083.205.173.405.27.602.197.4-.078.898-.523.898h-.908c-.889 0-1.713-.518-1.972-1.368a12 12 0 0 1-.521-3.507c0-1.553.295-3.036.831-4.398C3.387 9.953 4.167 9.5 5 9.5h1.053c.472 0 .745.556.5.96a8.958 8.958 0 0 0-1.302 4.665c0 1.194.232 2.333.654 3.375Z" />
+                                </svg>
+                                <p class="font-main text-center">250+ clients accompagnés</p>
+                            </div>
+                        </div>
+                        <div class="mt-10 flex items-center gap-x-6">
+                            <a href="{{ path('app_booking') }}" class="inline-flex items-center gap-x-2 text-sm font-semibold leading-6 text-white bg-primary px-3.5 py-3 rounded-full transition duration-100 hover:bg-primary-light">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-4">
+                                    <path fill-rule="evenodd" d="M1.5 4.5a3 3 0 0 1 3-3h1.372c.86 0 1.61.586 1.819 1.42l1.105 4.423a1.875 1.875 0 0 1-.694 1.955l-1.293.97c-.135.101-.164.249-.126.352a11.285 11.285 0 0 0 6.697 6.697c.103.038.25.009.352-.126l.97-1.293a1.875 1.875 0 0 1 1.955-.694l4.423 1.105c.834.209 1.42.959 1.42 1.82V19.5a3 3 0 0 1-3 3h-2.25C8.552 22.5 1.5 15.448 1.5 6.75V4.5Z" clip-rule="evenodd" />
+                                </svg>
+                                Appelez-moi
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bg-gray-50 lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
+            <img class="aspect-[3/2] object-cover lg:aspect-auto lg:size-full" src="https://emg-sa.s3.eu-central-2.amazonaws.com/emgsa.ch/images/backgroundemg.jpg" alt="">
+        </div>
+    </section>
     <section class="py-12 sm:py-20">
         <div class="mx-auto max-w-2xl lg:max-w-7xl px-6 lg:px-8">
             <div class="mx-auto max-w-2xl lg:mx-0">
-                <p class="text-sm font-semibold leading-7 text-primary uppercase tracking-wide">EEEEE</p>
+                <p class="text-sm font-semibold leading-7 text-primary uppercase tracking-wide">Découvrez nos offres</p>
                 <h2 class="mt-2 text-pretty text-3xl font-semibold tracking-tight text-gray-900 sm:text-4xl lg:text-balance">Nos services</h2>
             </div>
-            <div class="mx-auto mt-14 grid max-w-2xl auto-rows-fr grid-cols-1 gap-8 lg:mx-0 lg:max-w-none lg:grid-cols-2">
+            <div class="mx-auto mt-14 grid max-w-2xl lg:auto-rows-fr grid-cols-1 gap-12 lg:mx-0 lg:max-w-none lg:grid-cols-2">
                 <div>
                     <div class="flex items-center justify-between bg-gray-50 p-4 border border-gray-100 rounded-lg">
                         <h3 class="font-semibold text-lg">Pour les professionnels</h3>
@@ -19,16 +59,49 @@
                             <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
                         </svg>
                     </div>
-                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-5">
-                        <div class="flex items-center bg-gray-50 gap-x-4 p-4 border border-gray-100 rounded-lg transition duration-100 hover:bg-white hover:border-primary">
-                                <div class="flex h-11 w-11 items-center justify-center rounded-lg bg-gray-50 group-hover:bg-primary">
-                                    <svg class="h-6 w-6 text-gray-600 group-hover:text-white" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="m2.25 12 8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
-                                    </svg>
-                                </div>
-                                <p class="text-sm font-semibold font-primary">Entreprise</p>
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 mt-5">
+                        <div class="group relative flex gap-x-6 rounded-lg p-4 hover:bg-white border-gray-100 border bg-gray-50 hover:border-primary transition duration-100">
+                            <div class="mt-1 flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-primary">
+                                <svg class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 21h19.5m-18-18v18m10.5-18v18m6-13.5V21M6.75 6.75h.75m-.75 3h.75m-.75 3h.75m3-6h.75m-.75 3h.75m-.75 3h.75M6.75 21v-3.375c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21M3 3h12m-.75 4.5H21m-3.75 3.75h.008v.008h-.008v-.008Zm0 3h.008v.008h-.008v-.008Zm0 3h.008v.008h-.008v-.008Z" />
+                                </svg>
+                            </div>
+                            <div>
+                                <a href="{{ path('app_pro_offer_company') }}" class="font-semibold text-gray-900">
+                                    Entreprise
+                                    <span class="absolute inset-0"></span>
+                                </a>
+                                <p class="mt-1 text-gray-600">Des solutions de protection</p>
+                            </div>
                         </div>
-                        <div class="bg-gray-50 p-4 border border-gray-100 rounded-lg">test</div>
+                        <div class="group relative flex gap-x-6 rounded-lg p-4 hover:bg-white border-gray-100 border bg-gray-50 hover:border-primary transition duration-100">
+                            <div class="mt-1 flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-primary">
+                                <svg class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="m20.893 13.393-1.135-1.135a2.252 2.252 0 0 1-.421-.585l-1.08-2.16a.414.414 0 0 0-.663-.107.827.827 0 0 1-.812.21l-1.273-.363a.89.89 0 0 0-.738 1.595l.587.39c.59.395.674 1.23.172 1.732l-.2.2c-.212.212-.33.498-.33.796v.41c0 .409-.11.809-.32 1.158l-1.315 2.191a2.11 2.11 0 0 1-1.81 1.025 1.055 1.055 0 0 1-1.055-1.055v-1.172c0-.92-.56-1.747-1.414-2.089l-.655-.261a2.25 2.25 0 0 1-1.383-2.46l.007-.042a2.25 2.25 0 0 1 .29-.787l.09-.15a2.25 2.25 0 0 1 2.37-1.048l1.178.236a1.125 1.125 0 0 0 1.302-.795l.208-.73a1.125 1.125 0 0 0-.578-1.315l-.665-.332-.091.091a2.25 2.25 0 0 1-1.591.659h-.18c-.249 0-.487.1-.662.274a.931.931 0 0 1-1.458-1.137l1.411-2.353a2.25 2.25 0 0 0 .286-.76m11.928 9.869A9 9 0 0 0 8.965 3.525m11.928 9.868A9 9 0 1 1 8.965 3.525" />
+                                </svg>
+                            </div>
+                            <div>
+                                <a href="{{ path('app_pro_offer_international') }}" class="font-semibold text-gray-900">
+                                    International
+                                    <span class="absolute inset-0"></span>
+                                </a>
+                                <p class="mt-1 text-gray-600">Une protection complète, ici et ailleurs</p>
+                            </div>
+                        </div>
+                        <div class="group relative flex gap-x-6 rounded-lg p-4 hover:bg-white border-gray-100 border bg-gray-50 hover:border-primary transition duration-100">
+                            <div class="mt-1 flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-primary">
+                                <svg class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v17.25m0 0c-1.472 0-2.882.265-4.185.75M12 20.25c1.472 0 2.882.265 4.185.75M18.75 4.97A48.416 48.416 0 0 0 12 4.5c-2.291 0-4.545.16-6.75.47m13.5 0c1.01.143 2.01.317 3 .52m-3-.52 2.62 10.726c.122.499-.106 1.028-.589 1.202a5.988 5.988 0 0 1-2.031.352 5.988 5.988 0 0 1-2.031-.352c-.483-.174-.711-.703-.59-1.202L18.75 4.971Zm-16.5.52c.99-.203 1.99-.377 3-.52m0 0 2.62 10.726c.122.499-.106 1.028-.589 1.202a5.989 5.989 0 0 1-2.031.352 5.989 5.989 0 0 1-2.031-.352c-.483-.174-.711-.703-.59-1.202L5.25 4.971Z" />
+                                </svg>
+                            </div>
+                            <div>
+                                <a href="{{ path('app_pro_offer_liberal_profession') }}" class="font-semibold text-gray-900">
+                                    Profession libérale
+                                    <span class="absolute inset-0"></span>
+                                </a>
+                                <p class="mt-1 text-gray-600">Une couverture dédiée aux libéraux</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div>
@@ -38,19 +111,105 @@
                             <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
                         </svg>
                     </div>
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 mt-5">
+                        <div class="group relative flex gap-x-6 rounded-lg p-4 hover:bg-white border-gray-100 border bg-gray-50 hover:border-primary transition duration-100">
+                            <div class="mt-1 flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-primary">
+                                <svg class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75m-3-7.036A11.959 11.959 0 0 1 3.598 6 11.99 11.99 0 0 0 3 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285Z" />
+                                </svg>
+                            </div>
+                            <div>
+                                <a href="{{ path('app_individual_insurance') }}" class="font-semibold text-gray-900">
+                                    Assurance
+                                    <span class="absolute inset-0"></span>
+                                </a>
+                                <p class="mt-1 text-gray-600">Des solutions de protection sur mesure</p>
+                            </div>
+                        </div>
+                        <div class="group relative flex gap-x-6 rounded-lg p-4 hover:bg-white border-gray-100 border bg-gray-50 hover:border-primary transition duration-100">
+                            <div class="mt-1 flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-primary">
+                                <svg class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 6.75V15m6-6v8.25m.503 3.498 4.875-2.437c.381-.19.622-.58.622-1.006V4.82c0-.836-.88-1.38-1.628-1.006l-3.869 1.934c-.317.159-.69.159-1.006 0L9.503 3.252a1.125 1.125 0 0 0-1.006 0L3.622 5.689C3.24 5.88 3 6.27 3 6.695V19.18c0 .836.88 1.38 1.628 1.006l3.869-1.934c.317-.159.69-.159 1.006 0l4.994 2.497c.317.158.69.158 1.006 0Z" />
+                                </svg>
+                            </div>
+                            <div>
+                                <a href="{{ path('app_individual_offer_border') }}" class="font-semibold text-gray-900">
+                                    Frontalier
+                                    <span class="absolute inset-0"></span>
+                                </a>
+                                <p class="mt-1 text-gray-600">Une couverture adaptée à vos besoins</p>
+                            </div>
+                        </div>
+                        <div class="group relative flex gap-x-6 rounded-lg p-4 hover:bg-white border-gray-100 border bg-gray-50 hover:border-primary transition duration-100">
+                            <div class="mt-1 flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-primary">
+                                <svg class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 18.75a60.07 60.07 0 0 1 15.797 2.101c.727.198 1.453-.342 1.453-1.096V18.75M3.75 4.5v.75A.75.75 0 0 1 3 6h-.75m0 0v-.375c0-.621.504-1.125 1.125-1.125H20.25M2.25 6v9m18-10.5v.75c0 .414.336.75.75.75h.75m-1.5-1.5h.375c.621 0 1.125.504 1.125 1.125v9.75c0 .621-.504 1.125-1.125 1.125h-.375m1.5-1.5H21a.75.75 0 0 0-.75.75v.75m0 0H3.75m0 0h-.375a1.125 1.125 0 0 1-1.125-1.125V15m1.5 1.5v-.75A.75.75 0 0 0 3 15h-.75M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Zm3 0h.008v.008H18V10.5Zm-12 0h.008v.008H6V10.5Z" />
+                                </svg>
+                            </div>
+                            <div>
+                                <a href="{{ path('app_individual_taxation') }}" class="font-semibold text-gray-900">
+                                    Fiscalité
+                                    <span class="absolute inset-0"></span>
+                                </a>
+                                <p class="mt-1 text-gray-600">Maîtrisez vos finances avec gestion</p>
+                            </div>
+                        </div>
+                        <div class="group relative flex gap-x-6 rounded-lg p-4 hover:bg-white border-gray-100 border bg-gray-50 hover:border-primary transition duration-100">
+                            <div class="mt-1 flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-primary">
+                                <svg class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
+                                </svg>
+                            </div>
+                            <div>
+                                <a href="{{ path('app_individual_health') }}" class="font-semibold text-gray-900">
+                                    Santé
+                                    <span class="absolute inset-0"></span>
+                                </a>
+                                <p class="mt-1 text-gray-600">Préservez votre bien-être avec une protection santé</p>
+                            </div>
+                        </div>
+                        <div class="group relative flex gap-x-6 rounded-lg p-4 hover:bg-white border-gray-100 border bg-gray-50 hover:border-primary transition duration-100">
+                            <div class="mt-1 flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-primary">
+                                <svg class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="m2.25 12 8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
+                                </svg>
+                            </div>
+                            <div>
+                                <a href="{{ path('app_individual_mortgage') }}" class="font-semibold text-gray-900">
+                                    Hypothèque
+                                    <span class="absolute inset-0"></span>
+                                </a>
+                                <p class="mt-1 text-gray-600">Réalisez vos projets avec un prêt hypothécaire</p>
+                            </div>
+                        </div>
+                        <div class="group relative flex gap-x-6 rounded-lg p-4 hover:bg-white border-gray-100 border bg-gray-50 hover:border-primary transition duration-100">
+                            <div class="mt-1 flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-primary">
+                                <svg class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M16.712 4.33a9.027 9.027 0 0 1 1.652 1.306c.51.51.944 1.064 1.306 1.652M16.712 4.33l-3.448 4.138m3.448-4.138a9.014 9.014 0 0 0-9.424 0M19.67 7.288l-4.138 3.448m4.138-3.448a9.014 9.014 0 0 1 0 9.424m-4.138-5.976a3.736 3.736 0 0 0-.88-1.388 3.737 3.737 0 0 0-1.388-.88m2.268 2.268a3.765 3.765 0 0 1 0 2.528m-2.268-4.796a3.765 3.765 0 0 0-2.528 0m4.796 4.796c-.181.506-.475.982-.88 1.388a3.736 3.736 0 0 1-1.388.88m2.268-2.268 4.138 3.448m0 0a9.027 9.027 0 0 1-1.306 1.652c-.51.51-1.064.944-1.652 1.306m0 0-3.448-4.138m3.448 4.138a9.014 9.014 0 0 1-9.424 0m5.976-4.138a3.765 3.765 0 0 1-2.528 0m0 0a3.736 3.736 0 0 1-1.388-.88 3.737 3.737 0 0 1-.88-1.388m2.268 2.268L7.288 19.67m0 0a9.024 9.024 0 0 1-1.652-1.306 9.027 9.027 0 0 1-1.306-1.652m0 0 4.138-3.448M4.33 16.712a9.014 9.014 0 0 1 0-9.424m4.138 5.976a3.765 3.765 0 0 1 0-2.528m0 0c.181-.506.475-.982.88-1.388a3.736 3.736 0 0 1 1.388-.88m-2.268 2.268L4.33 7.288m6.406 1.18L7.288 4.33m0 0a9.024 9.024 0 0 0-1.652 1.306A9.025 9.025 0 0 0 4.33 7.288" />
+                                </svg>
+                            </div>
+                            <div>
+                                <a href="{{ path('app_individual_health_insurance') }}" class="font-semibold text-gray-900">
+                                    Prévoyance
+                                    <span class="absolute inset-0"></span>
+                                </a>
+                                <p class="mt-1 text-gray-600">Anticipez l'avenir avec une solution de prévoyance</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
-    <section class="bg-white mx-auto max-w-7xl py-12 sm:py-20">
-        <div class="px-6 lg:px-8 bg-gray-50 mx-auto max-w-7xl border-gray-100 border rounded-xl py-12">
+    <section class="bg-white mx-auto max-w-7xl py-12 sm:py-20 md:px-6">
+        <div class="px-6 lg:px-8 bg-gray-50 mx-auto max-w-7xl md:border-gray-100 md:border md:rounded-xl py-12">
             <h2 class="text-center text-lg/8 font-semibold text-gray-900">500+ assureurs nous font confiance en Suisse</h2>
             <div class="mt-16 mx-auto grid max-w-lg grid-cols-4 items-center gap-x-8 gap-y-10 sm:max-w-xl sm:grid-cols-6 sm:gap-x-10 lg:mx-0 lg:max-w-none lg:grid-cols-5">
-                <img class="col-span-2 h-9 w-full object-contain lg:col-span-1" src="{{ asset('media/brand/la_baloise.webp') }}" alt="La baloise" width="158" height="48">
-                <img class="col-span-2 h-10 w-full object-contain lg:col-span-1" src="{{ asset('media/brand/allianz.webp') }}" alt="Allianz" width="158" height="48">
-                <img class="col-span-2 h-7 w-full object-contain lg:col-span-1" src="{{ asset('media/brand/helsana.webp') }}" alt="Helsana" width="158" height="48">
-                <img class="col-span-2 h-11 w-full object-contain sm:col-start-2 lg:col-span-1" src="{{ asset('media/brand/vaudoise.webp') }}" alt="Vaudoise" width="158" height="48">
-                <img class="col-span-2 col-start-2 h-9 w-full object-contain sm:col-start-auto lg:col-span-1" src="{{ asset('media/brand/concordia.webp') }}" alt="Concordia" width="158" height="48">
+                <img class="col-span-2 h-6 sm:h-8 w-full object-contain lg:col-span-1" src="{{ asset('media/brand/la_baloise.webp') }}" alt="La baloise" width="158" height="48">
+                <img class="col-span-2 h-7 sm:h-9 w-full object-contain lg:col-span-1" src="{{ asset('media/brand/allianz.webp') }}" alt="Allianz" width="158" height="48">
+                <img class="col-span-2 h-4 sm:h-6 w-full object-contain lg:col-span-1" src="{{ asset('media/brand/helsana.webp') }}" alt="Helsana" width="158" height="48">
+                <img class="col-span-2 h-8 sm:h-10 w-full object-contain sm:col-start-2 lg:col-span-1" src="{{ asset('media/brand/vaudoise.webp') }}" alt="Vaudoise" width="158" height="48">
+                <img class="col-span-2 col-start-2 h-6 sm:h-8 w-full object-contain sm:col-start-auto lg:col-span-1" src="{{ asset('media/brand/concordia.webp') }}" alt="Concordia" width="158" height="48">
             </div>
         </div>
     </section>
@@ -83,12 +242,33 @@
                     </div>
                 </div>
                 <div class="px-6">
-                    <img src="{{ asset('media/website/main-ag.webp') }}" alt="Assurance Genevoise, votre partenaire de confiance en Suisse" class="aspect-video lg:aspect-square object-cover rounded-3xl">
+                    <img src="{{ asset('media/website/assurance-genevoise-a-geneve.webp') }}" alt="Assurance Genevoise, votre partenaire de confiance en Suisse" class="aspect-video lg:aspect-square object-cover rounded-3xl">
                 </div>
             </div>
         </div>
     </section>
-
+    <section class="overflow-hidden bg-white py-12 sm:py-20">
+        <div class="mx-auto max-w-2xl lg:max-w-7xl md:px-6 lg:px-8">
+            <div class="grid grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:grid-cols-2 lg:items-center">
+                <div class="px-6 order-2 lg:order-1">
+                    <img src="{{ asset('media/website/assurance-genevoise-geneve.webp') }}" alt="Assurance Genevoise, votre partenaire de confiance en Suisse" class="aspect-video lg:aspect-square object-cover rounded-3xl">
+                </div>
+                <div class="px-6 lg:pt-4 order-1 lg:order-2">
+                    <div class="mx-auto max-w-2xl lg:mx-0 lg:max-w-lg">
+                        <h2 class="text-sm font-semibold text-pretty text-primary uppercase font-secondary">Confiance & transparence</h2>
+                        <p class="mt-2 text-pretty text-3xl font-semibold tracking-tight text-gray-900 sm:text-4xl font-primary">Votre partenaire de confiance à tavers la Suisse</p>
+                        <p class="mt-6 text-lg/8 text-gray-600">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis eaque, iste dolor cupiditate blanditiis ratione.</p>
+                        <p class="mt-3 text-lg/8 text-gray-600">Lorem ipsum, dolor sit amet rferendis suscipitit eaque, iste dolor cupiditat it eaque, iste dolor cupiditat eaque, iste dolor cupiditate blanditiis ratione.</p>
+                        <div class="mt-12">
+                            <a href="{{ path('app_booking') }}" class="inline-flex items-center gap-x-2 text-sm font-semibold leading-6 text-white bg-primary px-3.5 py-3 rounded-full transition duration-100 hover:bg-primary-light">
+                                Découvrir nos offres
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <section class="bg-white">
         <div class="mx-auto max-w-2xl lg:max-w-7xl px-6 py-12 sm:py-20 lg:px-8">
             <p class="text-sm font-semibold leading-7 text-primary uppercase tracking-wide text-center">Simplicité et rapidité</p>
@@ -131,7 +311,7 @@
                 </dl>
             </div>
             <div class="text-center mt-12">
-                <a href="{{ path('app_booking') }}" class="inline-flex items-center gap-x-2 text-sm font-semibold leading-6 text-white bg-primary px-3.5 py-3 rounded-lg transition duration-100 hover:bg-primary-light">
+                <a href="{{ path('app_booking') }}" class="inline-flex items-center gap-x-2 text-sm font-semibold leading-6 text-white bg-primary px-3.5 py-3 rounded-full transition duration-100 hover:bg-primary-light">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-4">
                         <path fill-rule="evenodd" d="M1.5 4.5a3 3 0 0 1 3-3h1.372c.86 0 1.61.586 1.819 1.42l1.105 4.423a1.875 1.875 0 0 1-.694 1.955l-1.293.97c-.135.101-.164.249-.126.352a11.285 11.285 0 0 0 6.697 6.697c.103.038.25.009.352-.126l.97-1.293a1.875 1.875 0 0 1 1.955-.694l4.423 1.105c.834.209 1.42.959 1.42 1.82V19.5a3 3 0 0 1-3 3h-2.25C8.552 22.5 1.5 15.448 1.5 6.75V4.5Z" clip-rule="evenodd" />
                     </svg>
