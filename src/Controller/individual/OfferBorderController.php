@@ -25,10 +25,4 @@ class OfferBorderController extends AbstractController
     {
         return $this->render('individual/offer_border/health.html.twig');
     }
-
-    #[Route('/particulier/frontalier/taux-de-change', name: 'app_individual_offer_border_exchange_rate', options: ['sitemap' => ['priority' => 0.8]])]
-    public function exchangeRate(): Response
-    {
-        return $this->render('individual/offer_border/exchange_rate.html.twig');
-    }
 }
