@@ -1,8 +1,11 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}{% endblock %}
-{% block description %}{% endblock %}
-{% block url %}{% endblock %}
+{% block title %}Solutions internationales pour Professionnels en Suisse{% endblock %}
+{% block description %}Assurance Genevoise propose des solutions internationales pour protéger les activités et revenus des professions libérales. Couverture santé mondiale adaptée à vos besoins.{% endblock %}
+{% block url %}{{ path('app_pro_offer_international') }}{% endblock %}
+
+{% block ogImage %}{{ asset('media/website/assurance-genevoise-banniere.webp') }}{% endblock %}
+{% block ogImageAlt %}Assurance Genevoise, solution internationale pour les professionnels{% endblock %}
 
 {% block body %}
     <section class="bg-white py-14 lg:py-20">

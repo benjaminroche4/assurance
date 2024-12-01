@@ -1,8 +1,11 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}{% endblock %}
-{% block description %}{% endblock %}
-{% block url %}{% endblock %}
+{% block title %}Blog{% endblock %}
+{% block description %}Découvrez le blog d’Assurance Genevoise : conseils, actualités et informations utiles sur les assurances en Suisse. Restez informé et optimisez vos choix.{% endblock %}
+{% block url %}{{ path('app_blog_list') }}{% endblock %}
+
+{% block ogImage %}{{ asset('media/website/assurance-genevoise-banniere.webp') }}{% endblock %}
+{% block ogImageAlt %}Assurance Genevoise, blog{% endblock %}
 
 {% block body %}
     <section class="bg-white py-14 lg:py-20">

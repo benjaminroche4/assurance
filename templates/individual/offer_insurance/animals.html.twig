@@ -1,8 +1,11 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}{% endblock %}
-{% block description %}{% endblock %}
-{% block url %}{% endblock %}
+{% block title %}Assurance Animaux pour Particulier en Suisse{% endblock %}
+{% block description %}Offrez une couverture santé à votre animal de compagnie. Assurance Genevoise propose des solutions adaptées pour garantir soins vétérinaires et protection en Suisse.{% endblock %}
+{% block url %}{{ path('app_individual_insurance_animals') }}{% endblock %}
+
+{% block ogImage %}{{ asset('media/website/assurance-genevoise-banniere.webp') }}{% endblock %}
+{% block ogImageAlt %}Assurance Genevoise, assurance animaux{% endblock %}
 
 {% block body %}
     <section class="relative z-40">

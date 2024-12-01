@@ -1,8 +1,11 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}{% endblock %}
-{% block description %}{% endblock %}
-{% block url %}{% endblock %}
+{% block title %}Assurance Véhicule à Moteur en Suisse{% endblock %}
+{% block description %}Assurez votre véhicule avec une couverture adaptée à vos besoins. Assurance Genevoise propose des solutions complètes pour protéger votre voiture et rouler en toute sérénité en Suisse.{% endblock %}
+{% block url %}{{ path('app_individual_insurance_motor_vehicle') }}{% endblock %}
+
+{% block ogImage %}{{ asset('media/website/assurance-genevoise-banniere.webp') }}{% endblock %}
+{% block ogImageAlt %}Assurance Genevoise, assurance Véhicule à Moteur en Suisse{% endblock %}
 
 {% block body %}
     <section class="bg-white py-14 lg:py-20">

@@ -1,8 +1,11 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}{% endblock %}
-{% block description %}{% endblock %}
-{% block url %}{% endblock %}
+{% block title %}Contrat Collectif et Perte de Gain pour les Professionnels{% endblock %}
+{% block description %}Assurance Genevoise propose des contrats collectifs et des couvertures perte de gain adaptés aux entreprises en Suisse. Protégez vos employés et sécurisez leur revenu en cas d’arrêt de travail.{% endblock %}
+{% block url %}{{ path('app_pro_offer_company_group_contract') }}{% endblock %}
+
+{% block ogImage %}{{ asset('media/website/assurance-genevoise-banniere.webp') }}{% endblock %}
+{% block ogImageAlt %}Assurance Genevoise, contrat collectif et perte de gain{% endblock %}
 
 {% block body %}
    <section class="relative z-40">

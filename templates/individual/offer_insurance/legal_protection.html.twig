@@ -1,8 +1,11 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}{% endblock %}
-{% block description %}{% endblock %}
-{% block url %}{% endblock %}
+{% block title %}Assurance Protection Juridique pour Particulier{% endblock %}
+{% block description %}Protégez-vous avec une assurance protection juridique adaptée. Assurance Genevoise vous aide à couvrir vos frais juridiques et à défendre vos droits en Suisse et à l’étranger.{% endblock %}
+{% block url %}{{ path('app_individual_insurance_legal_protection') }}{% endblock %}
+
+{% block ogImage %}{{ asset('media/website/assurance-genevoise-banniere.webp') }}{% endblock %}
+{% block ogImageAlt %}Assurance Genevoise, assurance protection juridique pour particulier{% endblock %}
 
 {% block body %}
     <section class="bg-white py-14 lg:py-20">

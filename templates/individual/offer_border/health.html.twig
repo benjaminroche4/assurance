@@ -1,8 +1,11 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}{% endblock %}
-{% block description %}{% endblock %}
-{% block url %}{% endblock %}
+{% block title %}Assurance Santé pour les Frontaliers{% endblock %}
+{% block description %}Découvrez nos assurances santé pour frontaliers. Une couverture adaptée à vos besoins des deux côtés de la frontière. Protégez-vous avec Assurance Genevoise.{% endblock %}
+{% block url %}{{ path('app_individual_offer_border_health') }}{% endblock %}
+
+{% block ogImage %}{{ asset('media/website/assurance-genevoise-banniere.webp') }}{% endblock %}
+{% block ogImageAlt %}Assurance Genevoise, assurance santé pour les frontaliers{% endblock %}
 
 {% block body %}
    <section class="bg-white py-14 lg:py-20">

@@ -1,8 +1,11 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}{% endblock %}
-{% block description %}{% endblock %}
-{% block url %}{% endblock %}
+{% block title %}Solutions Fiscales pour Particuliers en Suisse{% endblock %}
+{% block description %}Découvrez nos solutions fiscales sur mesure pour particuliers. Simplifiez vos démarches et optimisez votre fiscalité grâce à l’expertise d’Assurance Genevoise.{% endblock %}
+{% block url %}{{ path('app_individual_taxation') }}{% endblock %}
+
+{% block ogImage %}{{ asset('media/website/assurance-genevoise-banniere.webp') }}{% endblock %}
+{% block ogImageAlt %}Assurance Genevoise, fiscalité pour les particuliers{% endblock %}
 
 {% block body %}
     <section class="bg-white py-14 lg:py-20">

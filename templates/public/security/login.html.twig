@@ -1,8 +1,11 @@
 {% extends 'base_auth.html.twig' %}
 
-{% block title %}{% endblock %}
-{% block description %}{% endblock %}
-{% block url %}{% endblock %}
+{% block title %}Connexion à votre espace client{% endblock %}
+{% block description %}Accédez à votre espace client sécurisé avec Assurance Genevoise. Gérez vos contrats et demandez des devis en toute simplicité.{% endblock %}
+{% block url %}{{ path('app_login') }}{% endblock %}
+
+{% block ogImage %}{{ asset('media/website/assurance-genevoise-banniere.webp') }}{% endblock %}
+{% block ogImageAlt %}Assurance Genevoise, connexion à votre espace client{% endblock %}
 
 {% block body %}
     <main class="flex min-h-full flex-col justify-center px-6 py-12 lg:px-8">
@@ -10,9 +13,9 @@
             <a href="{{ path('app_home') }}">
                 <img class="mx-auto h-7 w-auto" src="{{ asset('media/logo/logo.svg') }}" alt="Logo de Assurance Genevoise, Assureur à Genève">
             </a>
-            <h2 class="mt-10 text-center text-pretty text-2xl/9 font-bold tracking-tight text-gray-900">
+            <h1 class="mt-10 text-center text-pretty text-2xl/9 font-bold tracking-tight text-gray-900">
                 Connexion à votre espace client
-            </h2>
+            </h1>
         </section>
         <section class="mt-10 sm:mx-auto sm:w-full sm:max-w-sm">
             <form class="space-y-6" action="#" method="POST">

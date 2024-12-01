@@ -1,8 +1,11 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}{% endblock %}
-{% block description %}{% endblock %}
-{% block url %}{% endblock %}
+{% block title %}Solutions Hypothécaires pour Particuliers en Suisse{% endblock %}
+{% block description %}Trouvez l’hypothèque idéale avec Assurance Genevoise. Profitez de solutions sur mesure pour financer votre bien immobilier en Suisse ou à l’international.{% endblock %}
+{% block url %}{{ path('app_individual_mortgage') }}{% endblock %}
+
+{% block ogImage %}{{ asset('media/website/assurance-genevoise-banniere.webp') }}{% endblock %}
+{% block ogImageAlt %}Assurance Genevoise, solutions hypothécaires pour particuliers en Suisse{% endblock %}
 
 {% block body %}
     <section class="relative z-40">

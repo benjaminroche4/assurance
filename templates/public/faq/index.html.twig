@@ -1,8 +1,12 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}{% endblock %}
-{% block description %}{% endblock %}
-{% block url %}{% endblock %}
+{% block title %}FAQ{% endblock %}
+{% block description %}Trouvez des réponses claires à vos questions fréquentes sur les assurances avec Assurance Genevoise. Découvrez nos solutions et simplifiez vos démarches.{% endblock %}
+{% block url %}{{ path('app_faq') }}{% endblock %}
+
+{% block ogImage %}{{ asset('media/website/assurance-genevoise-banniere.webp') }}{% endblock %}
+{% block ogImageAlt %}Assurance Genevoise, réponse à vos questions{% endblock %}
+
 
 {% block body %}
     <section class="bg-white py-14 lg:py-20">

@@ -5,6 +5,7 @@
         <title>{% block title %}{% endblock %} | Assurance Genevoise</title>
         <meta name="description" content="{% block description %}{% endblock %}">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="canonical" href="https://assurance-genevoise.ch{% block url %}{% endblock %}" />
 
         {% block stylesheets %}
             {{ encore_entry_link_tags('app') }}
@@ -17,20 +18,27 @@
             <script defer src="https://unpkg.com/alpinejs@3.14.3/dist/cdn.min.js"></script>
         {% endblock %}
 
-        <link rel="icon" href="{{ asset('media/favicon.ico') }}" />
+        <link rel="icon" href="{{ asset('media/favicon.ico') }}" type="image/x-icon">
         <link rel="apple-touch-icon" sizes="120x120" href="{{ asset('media/favicon/apple-touch-icon-120x120.png') }}">
+
+        <meta property="og:type" content="website">
+        <meta property="og:title" content="{{ block('title') }}">
+        <meta property="og:url" content="https://assurance-genevoise.ch{{ block('url') }}">
+        <meta property="og:image" content="{% block ogImage %}{% endblock %}">
+        <meta property="og:image:alt" content="{% block ogImageAlt %}{% endblock %}"/>
+        <meta property="og:description" content="{{ block('description') }}">
 
         <!-- Facebook Meta Tags -->
         <meta property="og:title" content="{{ block('title') }}">
-        <meta property="og:url" content="assurance-genevoise.ch{{ block('url') }}">
+        <meta property="og:url" content="https://assurance-genevoise.ch{{ block('url') }}">
         <meta property="og:image" content="{{ asset('media/website/assurance-genevoise-banniere.webp') }}">
         <meta property="og:type" content="website">
-        <meta property="og:site_name" content="assurance-genevoise.ch"/>
+        <meta property="og:site_name" content="Assurance Genevoise"/>
         <meta property="og:language" content="fr"/>
 
         <!-- Twitter Meta Tags -->
         <meta name="twitter:title" content="{{ block('title') }}">
-        <meta property="twitter:url" content="assurance-genevoise.ch{{ block('url') }}">
+        <meta property="twitter:url" content="https://assurance-genevoise.ch{{ block('url') }}">
         <meta name="twitter:image" content="{{ asset('media/website/assurance-genevoise-banniere.webp') }}">
         <meta property="twitter:domain" content="assurance-genevoise.ch">
         <meta name="twitter:card" content="summary_large_image">

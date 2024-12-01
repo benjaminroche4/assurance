@@ -1,8 +1,11 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}{% endblock %}
-{% block description %}{% endblock %}
-{% block url %}{% endblock %}
+{% block title %}Mentions légales{% endblock %}
+{% block description %}Consultez les mentions légales d’Assurance Genevoise. Retrouvez toutes les informations sur notre société, nos services et nos obligations légales en Suisse.{% endblock %}
+{% block url %}{{ path('app_legal_notice') }}{% endblock %}
+
+{% block ogImage %}{{ asset('media/website/assurance-genevoise-banniere.webp') }}{% endblock %}
+{% block ogImageAlt %}Assurance Genevoise, consultez nos mentions légales{% endblock %}
 
 {% block body %}
     <section class="bg-white py-14 lg:py-20">

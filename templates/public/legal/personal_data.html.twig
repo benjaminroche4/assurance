@@ -1,8 +1,11 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}{% endblock %}
-{% block description %}{% endblock %}
-{% block url %}{% endblock %}
+{% block title %}Données personnelles{% endblock %}
+{% block description %}Découvrez notre politique sur les données personnelles. Assurance Genevoise s’engage à protéger votre confidentialité et à respecter les réglementations en vigueur en Suisse.{% endblock %}
+{% block url %}{{ path('app_personal_data') }}{% endblock %}
+
+{% block ogImage %}{{ asset('media/website/assurance-genevoise-banniere.webp') }}{% endblock %}
+{% block ogImageAlt %}Assurance Genevoise, consultez notre politique de traitements des données{% endblock %}
 
 {% block body %}
     <section class="bg-white py-14 lg:py-20">

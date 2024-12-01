@@ -1,8 +1,11 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}{% endblock %}
-{% block description %}{% endblock %}
-{% block url %}{% endblock %}
+{% block title %}Prévoyance Frontalière pour les Particuliers{% endblock %}
+{% block description %}Assurance Genevoise propose des solutions de prévoyance frontalière adaptées. Sécurisez votre retraite et protégez-vous en Suisse comme en France avec des services personnalisés.{% endblock %}
+{% block url %}{{ path('app_individual_offer_border_health_insurance') }}{% endblock %}
+
+{% block ogImage %}{{ asset('media/website/assurance-genevoise-banniere.webp') }}{% endblock %}
+{% block ogImageAlt %}Assurance Genevoise, prévoyance frontalière{% endblock %}
 
 {% block body %}
    <section class="bg-white py-14 lg:py-20">

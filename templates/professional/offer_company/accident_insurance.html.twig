@@ -1,8 +1,11 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}{% endblock %}
-{% block description %}{% endblock %}
-{% block url %}{% endblock %}
+{% block title %}L'Assurance-Accident LAA pour les Professionnels{% endblock %}
+{% block description %}Protégez vos salariés avec une couverture complète contre les accidents professionnels, non professionnels et maladies liées au travail.{% endblock %}
+{% block url %}{{ path('app_pro_offer_company_accident_insurance') }}{% endblock %}
+
+{% block ogImage %}{{ asset('media/website/assurance-genevoise-banniere.webp') }}{% endblock %}
+{% block ogImageAlt %}Assurance Genevoise, assurance-accident LAA{% endblock %}
 
 {% block body %}
    <section class="relative z-40">

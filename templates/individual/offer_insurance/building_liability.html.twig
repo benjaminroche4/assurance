@@ -1,8 +1,11 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}{% endblock %}
-{% block description %}{% endblock %}
-{% block url %}{% endblock %}
+{% block title %}Assurance RC Immeuble et Bâtiment{% endblock %}
+{% block description %}Sécurisez votre immeuble ou bâtiment avec une assurance responsabilité civile adaptée. Assurance Genevoise vous accompagne pour couvrir vos biens et prévenir les risques.{% endblock %}
+{% block url %}{{ path('app_individual_insurance_building_liability') }}{% endblock %}
+
+{% block ogImage %}{{ asset('media/website/assurance-genevoise-banniere.webp') }}{% endblock %}
+{% block ogImageAlt %}Assurance Genevoise, assurance RC immeuble et bâtiment{% endblock %}
 
 {% block body %}
     <section class="relative z-40">

@@ -1,8 +1,11 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}{% endblock %}
-{% block description %}{% endblock %}
-{% block url %}{% endblock %}
+{% block title %}Me faire rappeler{% endblock %}
+{% block description %}Faites-vous rappeler gratuitement par un expert d’Assurance Genevoise. Une équipe réactive pour répondre à vos besoins en assurance en Suisse.{% endblock %}
+{% block url %}{{ path('app_booking') }}{% endblock %}
+
+{% block ogImage %}{{ asset('media/website/assurance-genevoise-banniere.webp') }}{% endblock %}
+{% block ogImageAlt %}Assurance Genevoise, me faire rappeler{% endblock %}
 
 {% block body %}
     {% set now = date() %}

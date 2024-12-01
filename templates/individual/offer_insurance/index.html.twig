@@ -1,16 +1,19 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}{% endblock %}
-{% block description %}{% endblock %}
-{% block url %}{% endblock %}
+{% block title %}Assurances pour Particulier en Suisse{% endblock %}
+{% block description %}Découvrez des solutions d’assurances sur mesure pour protéger vos biens, vos proches et préparer sereinement votre avenir avec Assurance Genevoise.{% endblock %}
+{% block url %}{{ path('app_pro_offer_company_group_contract') }}{% endblock %}
+
+{% block ogImage %}{{ asset('media/website/assurance-genevoise-banniere.webp') }}{% endblock %}
+{% block ogImageAlt %}Assurance Genevoise, assurances pour particulier en Suisse{% endblock %}
 
 {% block body %}
     <section class="bg-white py-14 lg:py-20">
         <div class="mx-auto max-w-2xl lg:max-w-7xl px-6 lg:px-8">
             <div class="mx-auto max-w-2xl lg:mx-0">
                 <p class="text-sm font-semibold leading-7 text-primary uppercase tracking-wide">Particulier</p>
-                <h1 class="mt-2 text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">Assurance</h1>
-                <p class="mt-6 text-lg leading-8 text-gray-600">Des solutions d'assurance adaptées pour protéger vos biens, vos proches et votre avenir.</p>
+                <h1 class="mt-2 text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">Assurances</h1>
+                <p class="mt-6 text-lg leading-8 text-gray-600">Des solutions d'assurances adaptées pour protéger vos biens, vos proches et votre avenir.</p>
             </div>
             <div class="mx-auto grid max-w-2xl auto-rows-fr grid-cols-1 md:grid-cols-2 gap-8 mt-12 lg:mt-16 lg:mx-0 lg:max-w-none lg:grid-cols-3">
                 <div class="group relative isolate flex flex-col justify-end overflow-hidden bg-gray-50 hover:bg-white border border-gray-100 hover:border-primary rounded-3xl p-8 transition duration-100">

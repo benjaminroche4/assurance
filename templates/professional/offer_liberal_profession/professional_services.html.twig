@@ -1,15 +1,18 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}{% endblock %}
-{% block description %}{% endblock %}
-{% block url %}{% endblock %}
+{% block title %}Services Professionnels pour Professions Libérales en Suisse{% endblock %}
+{% block description %}Assurance Genevoise propose des services dédiés aux professions libérales : assurances sur mesure pour sécuriser votre activité, vos revenus et vos responsabilités en Suisse.{% endblock %}
+{% block url %}{{ path('app_pro_offer_liberal_profession_professional_services') }}{% endblock %}
+
+{% block ogImage %}{{ asset('media/website/assurance-genevoise-banniere.webp') }}{% endblock %}
+{% block ogImageAlt %}Assurance Genevoise, services professionnels{% endblock %}
 
 {% block body %}
   <section class="bg-white py-14 lg:py-20">
     <div class="mx-auto max-w-2xl lg:max-w-7xl px-6 lg:px-8 grid lg:grid-cols-3 items-center gap-x-6">
       <div class="mx-auto max-w-2xl lg:mx-0 lg:col-span-2">
         <p class="text-sm font-semibold leading-7 text-primary uppercase tracking-wide">Professionnel</p>
-        <h1 class="mt-2 text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">Services Professionnels</h1>
+        <h1 class="mt-2 text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">Services professionnels</h1>
         <p class="mt-6 text-lg leading-8 text-gray-600">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration. But the majority have suffered alteration.</p>
         <div class="mt-10">
           <a href="{{ path('app_booking') }}" class="inline-flex items-center gap-x-2 text-sm font-semibold leading-6 text-white bg-primary px-3.5 py-3 sm:py-4 rounded-full transition duration-100 hover:bg-primary-light">

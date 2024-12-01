@@ -1,8 +1,11 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}{% endblock %}
-{% block description %}{% endblock %}
-{% block url %}{% endblock %}
+{% block title %}Assurance Voyage pour Particulier{% endblock %}
+{% block description %}Protégez-vous lors de vos déplacements avec une assurance voyage adaptée. Couverture médicale, annulation et assistance, Assurance Genevoise vous accompagne partout.{% endblock %}
+{% block url %}{{ path('app_individual_insurance_travel') }}{% endblock %}
+
+{% block ogImage %}{{ asset('media/website/assurance-genevoise-banniere.webp') }}{% endblock %}
+{% block ogImageAlt %}Assurance Genevoise, assurance voyage{% endblock %}
 
 {% block body %}
     <section class="bg-white py-14 lg:py-20">

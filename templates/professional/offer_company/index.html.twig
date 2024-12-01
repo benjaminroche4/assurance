@@ -1,8 +1,11 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}{% endblock %}
-{% block description %}{% endblock %}
-{% block url %}{% endblock %}
+{% block title %}Services pour Entreprises en Suisse{% endblock %}
+{% block description %}Découvrez nos solutions d’assurance sur mesure pour entreprises : protection de vos activités, collaborateurs et actifs avec Assurance Genevoise à Genève.{% endblock %}
+{% block url %}{{ path('app_pro_offer_company') }}{% endblock %}
+
+{% block ogImage %}{{ asset('media/website/assurance-genevoise-banniere.webp') }}{% endblock %}
+{% block ogImageAlt %}Assurance Genevoise, services pour Entreprises{% endblock %}
 
 {% block body %}
     <section class="bg-white py-14 lg:py-20">

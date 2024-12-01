@@ -1,8 +1,11 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}{% endblock %}
-{% block description %}{% endblock %}
-{% block url %}{% endblock %}
+{% block title %}Votre Courtier en Assurance en Suisse{% endblock %}
+{% block description %}Assurance Genevoise, courtier indépendant à Genève, vous propose des solutions sur mesure en assurance pour particuliers et entreprises. Expertise locale, confiance et transparence.{% endblock %}
+{% block url %}{{ path('app_home') }}{% endblock %}
+
+{% block ogImage %}{{ asset('media/website/assurance-genevoise-banniere.webp') }}{% endblock %}
+{% block ogImageAlt %}Assurance Genevoise, votre courtier en assurance en Suisse{% endblock %}
 
 {% block body %}
     <section class="relative z-40">
@@ -14,7 +17,7 @@
                 <div class="relative px-6 py-12 md:py-24 lg:py-32 lg:px-8 lg:pr-0 z-30">
                     <div class="mx-auto max-w-2xl lg:mx-0 lg:max-w-xl">
                         <h1 class="text-pretty text-4xl md:text-5xl font-bold tracking-tight text-gray-900 lg:text-6xl">Votre courtier de référence Suisse</h1>
-                        <p class="mt-8 text-pretty text-lg text-gray-600 sm:text-xl/8">Anim aute id magna aliqua ad ad non deserunt sunt. Qui cupidatat commodo. Elit sunt amet fugiat veniam occaecat fugiat aliqua.</p>
+                        <p class="mt-8 text-pretty text-lg text-gray-600 sm:text-xl/8">Assurance Genevoise, votre courtier en assurance indépendant de confiance à Genève, vous accompagne avec des solutions personnalisées grâce à ses bureaux répartis dans toute la Suisse.</p>
                         <div class="grid grid-cols-1 sm:grid-cols-2 items-start mt-10 space-y-5 sm:space-y-0">
                             <div class="font-medium text-base font-primary tracking-wide items-center border-l border-gray-900/10 flex gap-x-2 pl-3">
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="h-8 w-auto">
@@ -120,7 +123,7 @@
                             </div>
                             <div>
                                 <a href="{{ path('app_individual_insurance') }}" class="font-semibold text-gray-900">
-                                    Assurance
+                                    Assurances
                                     <span class="absolute inset-0"></span>
                                 </a>
                                 <p class="mt-1 text-gray-600">Des solutions de protection sur mesure</p>
@@ -203,7 +206,7 @@
     </section>
     <section class="bg-white mx-auto max-w-7xl py-12 sm:py-20 md:px-6">
         <div class="px-6 lg:px-8 bg-gray-50 mx-auto max-w-7xl md:border-gray-100 md:border md:rounded-xl py-12">
-            <h2 class="text-center text-lg/8 font-semibold text-gray-900">500+ assureurs nous font confiance en Suisse</h2>
+            <h2 class="text-center text-lg/8 font-semibold text-gray-900">30+ assureurs nous font confiance en Suisse</h2>
             <div class="mt-16 mx-auto grid max-w-lg grid-cols-4 items-center gap-x-8 gap-y-10 sm:max-w-xl sm:grid-cols-6 sm:gap-x-10 lg:mx-0 lg:max-w-none lg:grid-cols-5">
                 <a href="https://www.baloise.ch/fr/clients-prives.html" target="_blank">
                     <img class="col-span-2 h-6 sm:h-8 w-full object-contain lg:col-span-1" src="{{ asset('media/brand/la_baloise.webp') }}" alt="La baloise" width="158" height="48">
@@ -228,9 +231,9 @@
             <div class="grid grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:grid-cols-2 lg:items-center">
                 <div class="px-6 lg:px-0 lg:pr-4 lg:pt-4">
                     <div class="mx-auto max-w-2xl lg:mx-0 lg:max-w-lg">
-                        <h2 class="text-sm font-semibold text-pretty text-primary uppercase font-secondary">Confiance & transparence</h2>
+                        <h2 class="text-sm font-semibold text-pretty text-primary uppercase font-secondary">Fiabilité & transparence</h2>
                         <p class="mt-2 text-pretty text-3xl font-semibold tracking-tight text-gray-900 sm:text-4xl font-primary">Votre partenaire de confiance en Suisse</p>
-                        <p class="mt-6 text-lg/8 text-gray-600">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.</p>
+                        <p class="mt-6 text-lg/8 text-gray-600">Nous nous engageons pleinement pour nos clients avec transparence, réactivité et une expertise approfondie.</p>
                         <dl class="mt-16 grid max-w-xl gap-8 sm:mt-20 grid-cols-2 xl:mt-16">
                             <div class="flex flex-col gap-y-3 border-l border-gray-900/10 pl-6">
                                 <dt class="text-sm leading-6 text-gray-600">années d'expérience</dt>

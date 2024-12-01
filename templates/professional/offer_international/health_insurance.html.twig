@@ -1,8 +1,11 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}{% endblock %}
-{% block description %}{% endblock %}
-{% block url %}{% endblock %}
+{% block title %}Assurance Maladie Internationale pour Professionnels{% endblock %}
+{% block description %}Assurez vos collaborateurs en mission à l’étranger avec une couverture santé internationale. Assurance Genevoise propose des solutions sur mesure pour les professionnels.{% endblock %}
+{% block url %}{{ path('app_pro_offer_international_health_insurance') }}{% endblock %}
+
+{% block ogImage %}{{ asset('media/website/assurance-genevoise-banniere.webp') }}{% endblock %}
+{% block ogImageAlt %}Assurance Genevoise, assurance maladie internationale{% endblock %}
 
 {% block body %}
     <section class="relative z-40">

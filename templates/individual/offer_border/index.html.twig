@@ -1,8 +1,11 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}{% endblock %}
-{% block description %}{% endblock %}
-{% block url %}{% endblock %}
+{% block title %}Assurances et Prévoyance pour Frontaliers en Suisse{% endblock %}
+{% block description %}Découvrez nos assurances sur mesure pour frontaliers. Protégez-vous efficacement en Suisse et en France grâce à des solutions adaptées à vos besoins spécifiques.{% endblock %}
+{% block url %}{{ path('app_individual_offer_border') }}{% endblock %}
+
+{% block ogImage %}{{ asset('media/website/assurance-genevoise-banniere.webp') }}{% endblock %}
+{% block ogImageAlt %}Assurance Genevoise, assurances et prévoyance pour Frontaliers{% endblock %}
 
 {% block body %}
     <section class="bg-white py-14 lg:py-20">

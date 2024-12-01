@@ -1,8 +1,11 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}{% endblock %}
-{% block description %}{% endblock %}
+{% block title %}Sinistre et Assistance{% endblock %}
+{% block description %}En cas de problème, comptez sur l’assistance d’Assurance Genevoise. Une équipe réactive pour vous accompagner et résoudre vos urgences en Suisse.{% endblock %}
 {% block url %}{{ path('app_assistance') }}{% endblock %}
+
+{% block ogImage %}{{ asset('media/website/assurance-genevoise-banniere.webp') }}{% endblock %}
+{% block ogImageAlt %}Assurance Genevoise, sinistre et assistance{% endblock %}
 
 {% block body %}
     {% set now = date() %}

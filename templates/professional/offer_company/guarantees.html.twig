@@ -1,8 +1,11 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}{% endblock %}
-{% block description %}{% endblock %}
-{% block url %}{% endblock %}
+{% block title %}Caution et Garanties pour Professionnels{% endblock %}
+{% block description %}Assurance Genevoise propose des solutions de caution et garanties pour entreprises et particuliers en Suisse. Sécurisez vos projets financiers et engagements contractuels dès aujourd’hui.{% endblock %}
+{% block url %}{{ path('app_pro_offer_company_guarantees') }}{% endblock %}
+
+{% block ogImage %}{{ asset('media/website/assurance-genevoise-banniere.webp') }}{% endblock %}
+{% block ogImageAlt %}Assurance Genevoise, caution et garanties{% endblock %}
 
 {% block body %}
    <section class="bg-white py-14 lg:py-20">

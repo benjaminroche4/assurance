@@ -1,8 +1,11 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}{% endblock %}
-{% block description %}{% endblock %}
-{% block url %}{% endblock %}
+{% block title %}Assurance Choses et Patrimoine pour les Particuliers{% endblock %}
+{% block description %}Sécurisez vos biens et votre patrimoine avec des assurances sur mesure. Assurance Genevoise vous propose des solutions adaptées pour protéger vos actifs en Suisse et à l’international.{% endblock %}
+{% block url %}{{ path('app_individual_insurance_property') }}{% endblock %}
+
+{% block ogImage %}{{ asset('media/website/assurance-genevoise-banniere.webp') }}{% endblock %}
+{% block ogImageAlt %}Assurance Genevoise, assurance de chose et patrimoine{% endblock %}
 
 {% block body %}
     <section class="relative z-40">
