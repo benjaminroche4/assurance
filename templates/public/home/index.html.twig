@@ -45,7 +45,7 @@
             </div>
         </div>
         <div class="bg-gray-50 lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
-            <img class="aspect-[3/2] object-cover lg:aspect-auto lg:size-full" src="https://emg-sa.s3.eu-central-2.amazonaws.com/emgsa.ch/images/backgroundemg.jpg" alt="">
+            <img class="aspect-[3/2] object-cover lg:aspect-auto lg:size-full" src="{{ asset('media/website/assurance-genevoise-geneve-assurance.webp') }}" alt="Assurance Genevoise, votre courtier en assurance en Suisse">
         </div>
     </section>
     <section class="py-12 sm:py-20">
@@ -207,21 +207,21 @@
     <section class="bg-white mx-auto max-w-7xl py-12 sm:py-20 md:px-6">
         <div class="px-6 lg:px-8 bg-gray-50 mx-auto max-w-7xl md:border-gray-100 md:border md:rounded-xl py-12">
             <h2 class="text-center text-lg/8 font-semibold text-gray-900">30+ assureurs nous font confiance en Suisse</h2>
-            <div class="mt-16 mx-auto grid max-w-lg grid-cols-4 items-center gap-x-8 gap-y-10 sm:max-w-xl sm:grid-cols-6 sm:gap-x-10 lg:mx-0 lg:max-w-none lg:grid-cols-5">
+            <div class="mt-16 mx-auto grid max-w-lg grid-cols-4 items-center gap-x-8 gap-y-10 sm:max-w-xl sm:gap-x-10 lg:mx-0 lg:max-w-none sm:grid-cols-5">
                 <a href="https://www.baloise.ch/fr/clients-prives.html" target="_blank">
-                    <img class="col-span-2 h-6 sm:h-8 w-full object-contain lg:col-span-1" src="{{ asset('media/brand/la_baloise.webp') }}" alt="La baloise" width="158" height="48">
+                    <img class="col-span-2 h-8 w-full object-contain lg:col-span-1" src="{{ asset('media/brand/la_baloise.webp') }}" alt="La baloise logo partenaire" width="158" height="48">
                 </a>
                 <a href="https://www.allianz.ch/fr/clients-prives.html" target="_blank">
-                    <img class="col-span-2 h-7 sm:h-9 w-full object-contain lg:col-span-1" src="{{ asset('media/brand/allianz.webp') }}" alt="Allianz" width="158" height="48">
+                    <img class="col-span-2 h-9 w-full object-contain lg:col-span-1" src="{{ asset('media/brand/allianz.webp') }}" alt="Allianz logo partenaire" width="158" height="48">
                 </a>
                 <a href="https://www.helsana.ch/fr/prives.html" target="_blank">
-                    <img class="col-span-2 h-4 sm:h-6 w-full object-contain lg:col-span-1" src="{{ asset('media/brand/helsana.webp') }}" alt="Helsana" width="158" height="48">
+                    <img class="col-span-2 h-6 w-full object-contain lg:col-span-1" src="{{ asset('media/brand/helsana.webp') }}" alt="Helsana logo partenaire" width="158" height="48">
                 </a>
                 <a href="https://www.vaudoise.ch/fr" target="_blank">
-                    <img class="col-span-2 h-8 sm:h-10 w-full object-contain sm:col-start-2 lg:col-span-1" src="{{ asset('media/brand/vaudoise.webp') }}" alt="Vaudoise" width="158" height="48">
+                    <img class="col-span-2 h-10 w-full object-contain sm:col-start-2 lg:col-span-1" src="{{ asset('media/brand/vaudoise.webp') }}" alt="Vaudoise logo partenaire" width="158" height="48">
                 </a>
-                <a href="https://www.concordia.ch/fr.html" target="_blank">
-                    <img class="col-span-2 col-start-2 h-6 sm:h-8 w-full object-contain sm:col-start-auto lg:col-span-1" src="{{ asset('media/brand/concordia.webp') }}" alt="Concordia" width="158" height="48">
+                <a href="https://www.concordia.ch/fr.html" class="lg:block hidden" target="_blank">
+                    <img class="col-span-2 col-start-2 h-8 w-full object-contain sm:col-start-auto lg:col-span-1" src="{{ asset('media/brand/concordia.webp') }}" alt="Concordia" width="158" height="48">
                 </a>
             </div>
         </div>
@@ -264,7 +264,7 @@
         <div class="mx-auto max-w-2xl lg:max-w-7xl md:px-6 lg:px-8">
             <div class="grid grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:grid-cols-2 lg:items-center">
                 <div class="px-6 order-2 lg:order-1">
-                    <img src="{{ asset('media/website/assurance-genevoise-geneve.webp') }}" alt="Assurance Genevoise, votre partenaire de confiance en Suisse" class="aspect-video lg:aspect-square object-cover rounded-3xl">
+                    <img src="{{ asset('media/website/assurance-genevoise-geneve-courtage.webp') }}" alt="Assurance Genevoise, votre partenaire de confiance en Suisse" class="aspect-video lg:aspect-square object-cover rounded-3xl">
                 </div>
                 <div class="px-6 lg:pt-4 order-1 lg:order-2">
                     <div class="mx-auto max-w-2xl lg:mx-0 lg:max-w-lg">
@@ -287,7 +287,7 @@
             <p class="text-sm font-semibold leading-7 text-primary uppercase tracking-wide text-center">Simplicité et rapidité</p>
             <h2 class="text-3xl font-semibold text-pretty tracking-tight text-gray-900 sm:text-4xl text-center mt-2">Votre couverture en 3 étapes</h2>
             <div class="mx-auto max-w-2xl mt-20 lg:max-w-none">
-                <dl class="grid grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-3">
+                <dl class="grid grid-cols-1 gap-8 lg:max-w-none lg:grid-cols-3">
                     <div class="flex flex-col bg-gray-50 p-8 rounded-2xl border border-gray-100">
                         <dt class="flex items-center gap-x-3 text-base/7 font-semibold text-gray-900 font-primary">
                             <div class="bg-primary rounded-full px-3 py-2">
@@ -352,7 +352,7 @@
                                     <circle cx="1" cy="1" r="1" />
                                 </svg>
                                 <div class="flex gap-x-2.5">
-                                    <img src="{{ asset('media/editor/'~post.authorProfilePhoto) }}" alt="Photo de profil du rédacteur de l'article" class="h-6 w-6 flex-none rounded-full bg-white/10">
+                                    <img src="{{ asset('media/editor/'~post.authorProfilePhoto) }}" alt="Photo de profil du rédacteur de l'article d'assurance genevoise" class="h-6 w-6 flex-none rounded-full bg-white/10">
                                     {{ post.authorName }}
                                 </div>
                             </div>
