@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://assurance-genevoise.ch/sitemap.xml
